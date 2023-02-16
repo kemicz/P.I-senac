@@ -1,0 +1,715 @@
+body{
+background-color: black;
+color: white;
+padding: 0%;
+margin: 0%;
+max-width: 100%;
+
+}
+
+/* menu */
+.menuvertical {
+    height: 100%; /* 100% = página inteira */
+    position: fixed; /* pra não sair do lugar */
+    width: 0; 
+    z-index: 1; /* p ficar no topo */
+    top: 0;
+    left: 0;
+    background-color: #f1efee; /* cor do menu*/
+    overflow-x: hidden; /*  pra desabilitar o scroll horizontal */
+    transition: 0.5s; 
+  }
+  
+  /* Os links do menu vertical */
+  .menuvertical a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 180%;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .menuvertical a:hover {
+    color: #aaa5a5;
+  }
+  
+  /* posição e estilo do  botão de fechar */
+  .menuvertical .fecharmenu {
+    font-size: 36px;
+    margin-left: 70%;
+  }
+  
+  /*o botão usado para abrir menu vertical */
+  .abrirmenu {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgb(223, 219, 219);
+    color: black;
+    width: 50px;
+    height: 45px;
+    border: none;
+    border-radius:100px;
+    position: fixed;
+    margin-left: 30px;
+  }
+  
+  .abrirmenu:hover {
+    background-color: #444;
+    
+  }
+
+  #icone{
+    transition: margin-left .5s; /* pra dar aquele efeito de transição */
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [id*="mySidebar"] {
+      width: 100%;
+    }
+  }
+
+
+/* posição do container <div> */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown (Oculto por padrão) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #a3a3a3;
+  z-index: 1;
+  width: 500px;
+}
+
+/* links ocultos no dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 1% 5%;
+  text-decoration: none;
+  display: block;
+}
+
+/* Alterar a cor dos links suspensos ao passar o mouse */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Mostrar o menu suspenso ao passar o mouse */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Altera a cor de fundo do botão suspenso quando o conteúdo suspenso for exibido */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  /* estilização da barra de pesquisa */
+.topnav a:hover {
+  background-color: #f1efee;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f1efee;
+  color: white;
+  border-color: white;
+}
+
+.topnav input[type=text] {
+  padding: 3%;
+  font-size: 100%;
+  padding-left: 13%;
+}
+
+@media screen and (max-width: 600%) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14%;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+  .slogan{
+    text-align: center;
+    font-size: larger;
+    width: 100%;
+  }
+
+  .slogan-h2{
+    padding-left: 10px;
+  }
+  
+  #corpo{
+    transition: margin-left .5s; /* pra dar aquele efeito de transição */
+
+  }
+
+
+/* breadcrumb */
+ul.breadcrumb {
+    padding: 10px 16px;
+    margin-left: 1%;
+    list-style: none;
+
+  }
+  
+  /* pra ficar do lado */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+
+  }
+  
+  /* cor do (/) vai ser adicionado toda vez que colocar um link na lista */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: white;
+    content: "/\00a0";
+  }
+  
+  /* cor */
+  ul.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* 
+  ul.breadcrumb li a:hover {
+    color: rgb(153, 153, 153)
+    ;
+    text-decoration: underline;
+  }
+
+
+/* começo coleções */
+.column {
+    width: 360px;
+    padding: 0 8px;
+    background-color: #f1efee;
+  }
+  
+
+  @media screen and (max-width: 100px) {
+    .column {
+      width: 100px;
+      display: flex;
+    }
+  }
+  
+  /* efeito de sombra na caixa da imagem */
+  .card {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #f1efee;
+  }
+  
+  .container1 {
+    padding: 0 19px;
+    color: rgb(109, 106, 106);
+  }
+  
+  .container1::after, .c1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+/* cores dos subtitulos */
+  .title-1 {
+    color: rgb(92, 30, 30);
+  }
+  .title-2 {
+    color: rgb(204, 0, 0);
+  }
+  .title-3 {
+    color: rgb(123, 123, 209);
+  }
+  .title-4 {
+    color: purple;
+  }
+  .title-5 {
+    color: rgb(189, 182, 182);
+  }
+  .title-6 {
+    color: rgb(192, 123, 84);
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+.tlbl{
+list-style: none;
+flex-wrap: wrap;
+display: flex;
+gap: 40px;
+justify-content: center;
+}
+
+/* NAVEGAÇÃO NUMERO 6 */
+#mySidenav {
+  height: 100%; 
+  width: 0; /* 0 width - pode ser mudado no js */
+  position: fixed; /* para ficar fixado na página */
+  z-index: 0; /* para ficar no topo */
+  top: 0; /* para ficar no topo */
+  right: 0;
+  background-color: #f1efee; 
+  overflow-x: scroll; 
+  transition: 0.5s; /* 0.5 de transição para o efeito da abertura da navegação lateral */
+  display: block;
+}
+
+.slideshow-container, .slideshow-container-5, .slideshow-container-4,.slideshow-container-3,.slideshow-container-2, .slideshow-container-1 {
+  width: 50%;
+  float: left;
+}
+
+/* posição e estilo do botão de fechar */
+.closebtn {
+  float: right;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-top: 2px;
+  background-color: #5e4949;
+  color: #e3d5ba;
+  border: none;
+  font-style: none;
+  text-decoration: none;
+  border-radius: 0 10px 10px 0px;
+}
+
+/*  */
+@media screen and (max-height: 450px) {
+  #mySidenav {padding-top: 15px;}
+  #mySidenav a {font-size: 18px;}
+}
+
+
+.infos{
+  background-color: #5e4949;
+  width: 40%;
+  height: 2400px;
+  float: right;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.p-info-1{
+  color: #d8cdbc;
+  font-size: larger;
+  text-align: center;
+}
+
+.p-info-2{
+  text-align: center;
+  color:  #d8cdbc;
+}
+
+.p-info-3{
+  text-align: center;
+  color:  #e3d5ba;
+  margin: 0%;
+}
+
+.p-info-4{
+  color: #e3d5ba;
+  font-size: small;
+  text-align: center;
+  margin: 0%;
+}
+
+.p-info-5{
+  color: #e3d5ba;
+  font-size: medium;
+  text-align: center;
+}
+
+.b-6{
+  cursor: pointer;
+  border: none;
+}
+
+/* NAVEGAÇÃO NUMERO 5 */
+#mySidenav-5{
+  height: 100%; 
+  width: 0; /* 0 width - pode ser mudado no js */
+  position: fixed; /* para ficar fixado na página */
+  z-index: 0; /* para ficar no topo */
+  top: 0; /* para ficar no topo */
+  right: 0;
+  background-color: #f1efee; 
+  overflow-x: scroll; 
+  transition: 0.5s; /* 0.5 de transição para o efeito da abertura da navegação lateral */
+  display: block;
+}
+
+.infos-5{
+  background-color: #5782ad;
+  width: 40%;
+  height: 2400px;
+  float: right;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.p-info-1--5{
+  color: #d8cdbc;
+  font-size: larger;
+  text-align: center;
+}
+
+.p-info-2--5{
+  text-align: center;
+  color:  #d8cdbc;
+}
+
+.p-info-3--5{
+  text-align: center;
+  color:  white;
+  margin: 0%;
+}
+
+.p-info-4--5{
+  color: #cebea6;
+  font-size: small;
+  text-align: center;
+  margin: 0%;
+}
+
+.p-info-5--5{
+  color: #d8cdbc;
+  font-size: medium;
+  text-align: center;
+}
+
+.b-5{
+  cursor: pointer;
+  border: none;
+}
+.closebtn-5{
+  float: right;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-top: 2px;
+  background-color: #5782ad;
+  color: #e3d5ba;
+  border: none;
+  font-style: none;
+  text-decoration: none;
+  border-radius: 0 10px 10px 0px;
+}
+
+
+/* NAVEGAÇÃO NUMERO 4 */
+#mySidenav-4{
+  height: 100%; 
+  width: 0; /* 0 width - pode ser mudado no js */
+  position: fixed; /* para ficar fixado na página */
+  z-index: 0; /* para ficar no topo */
+  top: 0; /* para ficar no topo */
+  right: 0;
+  background-color: white; 
+  overflow-x: scroll; 
+  transition: 0.5s; /* 0.5 de transição para o efeito da abertura da navegação lateral */
+  display: block;
+}
+
+.infos-4{
+  background-color: #d3b9e8;
+  width: 40%;
+  height: 2000px;
+  float: right;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.p-info-1--4{
+  color: white;
+  font-size: larger;
+  text-align: center;
+}
+
+.p-info-2--4{
+  text-align: center;
+  color:  white;
+}
+
+.p-info-3--4{
+  text-align: center;
+  color:  whitesmoke;
+  margin: 0%;
+}
+
+.p-info-4--4{
+  color: #eee3f7;
+  font-size: small;
+  text-align: center;
+  margin: 0%;
+}
+
+.p-info-5--4{
+  color: white;
+  font-size: medium;
+  text-align: center;
+}
+
+
+.b-4{
+  cursor: pointer;
+  border: none;
+}
+.closebtn-4{
+  float: right;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-top: 2px;
+  background-color: #d3b9e8;
+  color: white;
+  border: none;
+  font-style: none;
+  text-decoration: none;
+  border-radius: 0 10px 10px 0px;
+}
+
+
+/* NAVEGAÇÃO NUMERO 3 */
+#mySidenav-3{
+  height: 100%; 
+  width: 0; /* 0 width - pode ser mudado no js */
+  position: fixed; /* para ficar fixado na página */
+  z-index: 0; /* para ficar no topo */
+  top: 0; /* para ficar no topo */
+  right: 0;
+  background-color: #f1efee; 
+  overflow-x: scroll; 
+  transition: 0.5s; /* 0.5 de transição para o efeito da abertura da navegação lateral */
+  display: block;
+}
+
+.infos-3{
+  background-color:  #a2bbce;
+  width: 40%;
+  height: 2350px;
+  float: right;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.p-info-1--3{
+  color: #345f97;
+  font-size: larger;
+  text-align: center;
+}
+
+.p-info-2--3{
+  text-align: center;
+  color:  #345f97;
+}
+
+.p-info-3--3{
+  text-align: center;
+  color:  white;
+  margin: 0%;
+}
+
+.p-info-4--3{
+  color: #5782ad;
+  font-size: small;
+  text-align: center;
+  margin: 0%;
+}
+
+.p-info-5--3{
+  color: #345f97;
+  font-size: medium;
+  text-align: center;
+}
+
+.b-3{
+  cursor: pointer;
+  border: none;
+}
+.closebtn-3{
+  float: right;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-top: 2px;
+  background-color: #a2bbce;
+  color: #e3d5ba;
+  border: none;
+  font-style: none;
+  text-decoration: none;
+  border-radius: 0 10px 10px 0px;
+}
+
+
+
+/* NAVEGAÇÃO NUMERO 2 */
+#mySidenav-2{
+  height: 100%; 
+  width: 0; /* 0 width - pode ser mudado no js */
+  position: fixed; /* para ficar fixado na página */
+  z-index: 0; /* para ficar no topo */
+  top: 0; /* para ficar no topo */
+  right: 0;
+  background-color: #f1efee; 
+  overflow-x: scroll; 
+  transition: 0.5s; /* 0.5 de transição para o efeito da abertura da navegação lateral */
+  display: block;
+}
+
+.infos-2{
+  background-color:  #dd3034;
+  width: 40%;
+  height: 2350px;
+  float: right;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.p-info-1--2{
+  color: #e3d5ba;
+  font-size: larger;
+  text-align: center;
+}
+
+.p-info-2--2{
+  text-align: center;
+  color:  #e3d5ba;
+}
+
+.p-info-3--2{
+  text-align: center;
+  color:  white;
+  margin: 0%;
+}
+
+.p-info-4--2{
+  color: #cebea6;
+  font-size: small;
+  text-align: center;
+  margin: 0%;
+}
+
+.p-info-5--2{
+  color: #cebea6;
+  font-size: medium;
+  text-align: center;
+}
+
+.b-2{
+  cursor: pointer;
+  border: none;
+}
+.closebtn-2{
+  float: right;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-top: 2px;
+  background-color: #dd3034;
+  color: #e3d5ba;
+  border: none;
+  font-style: none;
+  text-decoration: none;
+  border-radius: 0 10px 10px 0px;
+}
+
+
+/* NAVEGAÇÃO NUMERO 1 */
+#mySidenav-1{
+  height: 100%; 
+  width: 0; /* 0 width - pode ser mudado no js */
+  position: fixed; /* para ficar fixado na página */
+  z-index: 0; /* para ficar no topo */
+  top: 0; /* para ficar no topo */
+  right: 0;
+  background-color: #f1efee; 
+  overflow-x: scroll; 
+  transition: 0.5s; /* 0.5 de transição para o efeito da abertura da navegação lateral */
+  display: block;
+}
+
+.infos-1{
+  background-color:  #e7dccb;
+  width: 40%;
+  height: 2350px;
+  float: right;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.p-info-1--1{
+  color: #5d3830;
+  font-size: larger;
+  text-align: center;
+}
+
+.p-info-2--1{
+  text-align: center;
+  color:  #5d3830;
+  font-size: x-large;
+}
+
+.p-info-3--1{
+  text-align: center;
+  color:  white;
+  margin: 0%;
+}
+
+.p-info-4--1{
+  color: #a8b2b8;
+  font-size: small;
+  text-align: center;
+  margin: 0%;
+}
+
+.p-info-5--1{
+  color: #5d3830;
+  font-size: medium;
+  text-align: center;
+}
+
+.b-1{
+  cursor: pointer;
+  border: none;
+}
+.closebtn-1{
+  float: right;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-top: 2px;
+  background-color: #e7dccb;
+  color: #5d3830;
+  border: none;
+  font-style: none;
+  text-decoration: none;
+  border-radius: 0 10px 10px 0px;
+}
+
+/* teste */
