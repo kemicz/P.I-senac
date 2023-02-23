@@ -1,7 +1,7 @@
 /* Defina a largura da barra lateral para 250px e a margem esquerda do conteúdo da página para 250px */
 function abrirNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("corpo").style.marginLeft = "250px";
+    document.getElementById("mySidebar").style.width = "260px";
+    document.getElementById("corpo").style.marginLeft = "260px";
 
   }
   
@@ -73,4 +73,20 @@ function closeNav1() {
   document.getElementById("mySidenav-1").style.width = "0";
   document.getElementById("main-1").style.marginLeft= "0";
 }
-/* teste */
+
+/* ler mais - 1 */
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Ler mais";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Ler menos";
+    moreText.style.display = "inline";
+  }
+}

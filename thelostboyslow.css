@@ -328,8 +328,10 @@ justify-content: center;
 
 .p-info-3{
   text-align: center;
-  color:  #e3d5ba;
+  color:  #5d3830;
   margin: 0%;
+  background-color: white;
+  padding: 1%;
 }
 
 .p-info-4{
@@ -341,7 +343,8 @@ justify-content: center;
 
 .p-info-5{
   color: #e3d5ba;
-  font-size: medium;
+  font-size: larger;
+  padding: 10px;
   text-align: center;
 }
 
@@ -378,7 +381,7 @@ justify-content: center;
   font-size: larger;
   text-align: center;
 }
-
+ 
 .p-info-2--5{
   text-align: center;
   color:  #d8cdbc;
@@ -386,7 +389,8 @@ justify-content: center;
 
 .p-info-3--5{
   text-align: center;
-  color:  white;
+  color:  #345f97;
+  background-color: white;
   margin: 0%;
 }
 
@@ -399,7 +403,8 @@ justify-content: center;
 
 .p-info-5--5{
   color: #d8cdbc;
-  font-size: medium;
+  font-size: larger;
+  padding: 10px;
   text-align: center;
 }
 
@@ -458,7 +463,8 @@ justify-content: center;
 
 .p-info-3--4{
   text-align: center;
-  color:  whitesmoke;
+  color:  #d3b9e8;
+  background-color: white;
   margin: 0%;
 }
 
@@ -471,11 +477,10 @@ justify-content: center;
 
 .p-info-5--4{
   color: white;
-  font-size: medium;
+  font-size: larger;
+  padding: 10px;
   text-align: center;
 }
-
-
 .b-4{
   cursor: pointer;
   border: none;
@@ -492,6 +497,19 @@ justify-content: center;
   font-style: none;
   text-decoration: none;
   border-radius: 0 10px 10px 0px;
+}
+/* ler mais */
+#more-4 {display: none;
+}
+
+#myBtn-4{
+  color: #5d3830;
+  background-color: white;
+  padding: 1%;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  width: 100%;
 }
 
 
@@ -531,8 +549,9 @@ justify-content: center;
 
 .p-info-3--3{
   text-align: center;
-  color:  white;
+  color:  #5782ad;
   margin: 0%;
+  background-color: white;
 }
 
 .p-info-4--3{
@@ -544,7 +563,8 @@ justify-content: center;
 
 .p-info-5--3{
   color: #345f97;
-  font-size: medium;
+  font-size: larger;
+  padding: 10px;
   text-align: center;
 }
 
@@ -564,6 +584,25 @@ justify-content: center;
   font-style: none;
   text-decoration: none;
   border-radius: 0 10px 10px 0px;
+}
+/* ler mais */
+.button--5-3 {
+  border: none;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+}
+#more-3 {display: none;
+}
+
+#myBtn-3{
+  color: #5d3830;
+  background-color: white;
+  padding: 1%;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  width: 100%;
 }
 
 
@@ -592,19 +631,20 @@ justify-content: center;
 }
 
 .p-info-1--2{
-  color: #e3d5ba;
+  color: white;
   font-size: larger;
   text-align: center;
 }
 
 .p-info-2--2{
   text-align: center;
-  color:  #e3d5ba;
+  color:  white;
 }
 
 .p-info-3--2{
   text-align: center;
-  color:  white;
+  color:  black;
+  background-color: white;
   margin: 0%;
 }
 
@@ -616,11 +656,14 @@ justify-content: center;
 }
 
 .p-info-5--2{
-  color: #cebea6;
-  font-size: medium;
+  color: white;
   text-align: center;
+  font-size: larger;
+  padding: 10px;
 }
-
+.p-info-6--2{
+  color: white;
+}
 .b-2{
   cursor: pointer;
   border: none;
@@ -677,22 +720,33 @@ justify-content: center;
 
 .p-info-3--1{
   text-align: center;
-  color:  white;
+  color:  #5d3830;
   margin: 0%;
+  background-color: white;
+  padding: 1%;
 }
 
 .p-info-4--1{
-  color: #a8b2b8;
+  color: #5d3830;
   font-size: small;
   text-align: center;
   margin: 0%;
 }
-
 .p-info-5--1{
+  padding: 10px;
   color: #5d3830;
-  font-size: medium;
+  font-size: larger;
   text-align: center;
 }
+
+.p-info-6--1{
+  color: #634d48;
+}
+
+.p-info-7--1{
+  color: #634d48;
+}
+
 
 .b-1{
   cursor: pointer;
@@ -712,4 +766,58 @@ justify-content: center;
   border-radius: 0 10px 10px 0px;
 }
 
-/* teste */
+.button--1-1{
+  text-align: center;
+  margin-top: 5%;
+  
+}
+
+.button--2-1 {
+  border: none;
+  outline: 0;
+  padding: 3%;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button--2-1:hover,.button--4-1:hover  {
+  background-color: #555;
+}
+
+.button--4-1 {
+  border: none;
+  outline: 0;
+  padding: 3%;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  color: black;
+  background-color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-style: double;
+}
+.button--5-1 {
+  border: none;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+}
+/* ler mais */
+#more {display: none;
+}
+
+#myBtn{
+  color: #5d3830;
+  background-color: white;
+  padding: 1%;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
