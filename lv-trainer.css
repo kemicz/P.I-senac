@@ -223,22 +223,22 @@ body{
       
     /* cores dos subtitulos */
       .title-1 {
-        color: #797979;
-      }
-      .title-2 {
-        color: rgb(204, 0, 0);
-      }
-      .title-3 {
         color: #004655;
       }
+      .title-2 {
+        color: #00b1de;
+      }
+      .title-3 {
+        color: #c1c3c4;
+      }
       .title-4 {
-        color: black;
+        color: #266f42;
       }
       .title-5 {
-        color: #04979f;
+        color: #26743a;
       }
       .title-6 {
-        color: #839d80;
+        color: #50403f;
       }
       
       .button {
@@ -291,8 +291,8 @@ body{
       right: 20px;
       font-size: 36px;
       margin-top: 2px;
-      background-color: #385247;
-      color: #839d80;
+      background-color: #50403f;
+      color: #7d5a44;
       border: none;
       font-style: none;
       text-decoration: none;
@@ -303,46 +303,47 @@ body{
     @media screen and (max-height: 450px) {
       #mySidenav {padding-top: 15px;}
       #mySidenav a {font-size: 18px;}
+      #mySidenav {width: 100%;}
     }
     
     
     .infos{
-      background-color: #385247;
+      background-color: #50403f;
       width: 40%;
-      height: 3400px;
+      height: 2000px;
       float: right;
       margin-top: 2px;
       margin-left: 5px;
     }
     
     .p-info-1{
-      color: #d8cdbc;
+      color: #99735b;
       font-size: larger;
       text-align: center;
     }
     
     .p-info-2{
       text-align: center;
-      color:  #d8cdbc;
+      color:  #99735b;
     }
     
     .p-info-3{
       text-align: center;
-      color:  #385247;
+      color:  #99735b;
       margin: 0%;
       background-color: white;
       padding: 1%;
     }
     
     .p-info-4{
-      color: #e3d5ba;
+      color: #99735b;
       font-size: small;
       text-align: center;
       margin: 0%;
     }
     
     .p-info-5{
-      color: #e3d5ba;
+      color: #99735b;
       font-size: larger;
       padding: 10px;
       text-align: center;
@@ -368,41 +369,41 @@ body{
     }
     
     .infos-5{
-      background-color: #bcbabb;
+      background-color:  #26743a;
       width: 40%;
-      height: 3400px;
+      height: 2000px;
       float: right;
       margin-top: 2px;
       margin-left: 5px;
     }
     
     .p-info-1--5{
-      color: #04979f;
+      color: white;
       font-size: larger;
       text-align: center;
     }
      
     .p-info-2--5{
       text-align: center;
-      color:  #04979f;
+      color:  white;
     }
     
     .p-info-3--5{
       text-align: center;
-      color:  #04979f;
+      color:  #06a768;
       background-color: white;
       margin: 0%;
     }
     
     .p-info-4--5{
-      color: #04979f;
+      color: white;
       font-size: small;
       text-align: center;
       margin: 0%;
     }
     
     .p-info-5--5{
-      color: #04979f;
+      color: white;
       font-size: larger;
       padding: 10px;
       text-align: center;
@@ -418,8 +419,8 @@ body{
       right: 20px;
       font-size: 36px;
       margin-top: 2px;
-      background-color: #bcbabb;
-      color: #04979f;
+      background-color:  #26743a;
+      color: white;
       border: none;
       font-style: none;
       text-decoration: none;
@@ -442,9 +443,9 @@ body{
     }
     
     .infos-4{
-      background-color: #48484a;
+      background-color: #266f42;
       width: 40%;
-      height: 2700px;
+      height: 2000px;
       float: right;
       margin-top: 2px;
       margin-left: 5px;
@@ -463,13 +464,13 @@ body{
     
     .p-info-3--4{
       text-align: center;
-      color:  black;
+      color:  #266f42;
       background-color: white;
       margin: 0%;
     }
     
     .p-info-4--4{
-      color: #929296;
+      color: #78ac8d;
       font-size: small;
       text-align: center;
       margin: 0%;
@@ -491,7 +492,7 @@ body{
       right: 20px;
       font-size: 36px;
       margin-top: 2px;
-      background-color: #48484a;
+      background-color: #266f42;
       color: white;
       border: none;
       font-style: none;
@@ -528,41 +529,41 @@ body{
     }
     
     .infos-3{
-      background-color:  #004655;
+      background-color:  #c1c3c4;
       width: 40%;
-      height: 3350px;
+      height: 2000px;
       float: right;
       margin-top: 2px;
       margin-left: 5px;
     }
     
     .p-info-1--3{
-      color: #0294a3;
+      color: #96a6a1;
       font-size: larger;
       text-align: center;
     }
     
     .p-info-2--3{
       text-align: center;
-      color:  #0294a3;
+      color:  #96a6a1;
     }
     
     .p-info-3--3{
       text-align: center;
-      color:  #0294a3;
+      color:  #96a6a1;
       margin: 0%;
       background-color: white;
     }
     
     .p-info-4--3{
-      color: #0294a3;
+      color: #96a6a1;
       font-size: small;
       text-align: center;
       margin: 0%;
     }
     
     .p-info-5--3{
-      color: #0294a3;
+      color: #96a6a1;
       font-size: larger;
       padding: 10px;
       text-align: center;
@@ -578,8 +579,8 @@ body{
       right: 20px;
       font-size: 36px;
       margin-top: 2px;
-      background-color: #004655;
-      color: #0294a3;
+      background-color: #c1c3c4;
+      color: #7c8884;
       border: none;
       font-style: none;
       text-decoration: none;
@@ -622,9 +623,9 @@ body{
     }
     
     .infos-2{
-      background-color:  #8c0a0c;
+      background-color:  #00b1de;
       width: 40%;
-      height: 3350px;
+      height: 2000px;
       float: right;
       margin-top: 2px;
       margin-left: 5px;
@@ -643,7 +644,7 @@ body{
     
     .p-info-3--2{
       text-align: center;
-      color:  black;
+      color:  #83bde4;
       background-color: white;
       margin: 0%;
     }
@@ -674,7 +675,7 @@ body{
       right: 20px;
       font-size: 36px;
       margin-top: 2px;
-      background-color: #8c0a0c;
+      background-color: #00b1de;
       color: #e3d5ba;
       border: none;
       font-style: none;
@@ -698,9 +699,9 @@ body{
     }
     
     .infos-1{
-      background-color:  #77747b;
+      background-color:  #004655;
       width: 40%;
-      height: 3150px;
+      height: 2000px;
       float: right;
       margin-top: 2px;
       margin-left: 5px;
@@ -763,7 +764,7 @@ body{
       right: 20px;
       font-size: 36px;
       margin-top: 2px;
-      background-color: #77747b;
+      background-color: #004655;
       color: #d6d4d7;
       border: none;
       font-style: none;
