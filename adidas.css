@@ -7,6 +7,12 @@ body{
     
     }
     
+    .container-desc {
+      text-align: center;
+      justify-content: center;
+    }
+    
+    
     /* menu */
     .menuvertical {
         height: 100%; /* 100% = página inteira */
@@ -60,6 +66,13 @@ body{
         margin-left: 30px;
       }
       
+      @media screen and (max-width: 490px) {
+        .abrirmenu {
+          margin-top: 0px;
+          margin-left: 10px;
+        }
+      }
+
       .abrirmenu:hover {
         background-color: #444;
         
@@ -69,14 +82,19 @@ body{
         transition: margin-left .5s; /* pra dar aquele efeito de transição */
       }
     
-    
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 700px) {
         /* For mobile phones: */
         [id*="mySidebar"] {
           width: 100%;
         }
+        [id*="corpo"]{
+          margin-left: 0px;
+        }
       }
     
+      .hr-menuvertical{
+        margin-top: 25px;
+      }
     
     /* posição do container <div> */
     .dropdown {
@@ -112,18 +130,45 @@ body{
     
     
       .slogan{
-        text-align: center;
-        font-size: larger;
-        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+      }
+
+      @media screen and (max-width: 490px) {
+        .slogan {
+          padding: 10px;
+        }
       }
     
-      .slogan-h2{
-        padding-left: 10px;
+      @media screen and (max-width: 700px) {
+        .img-slogan {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 700px) {
+        .p-slogan {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .p-slogan {
+          text-align: center;
+          font-size: x-large;
+          width: 100%;
+          margin-top: 40px;
+        }
       }
       
+      @media screen and (max-width: 700px) {
+        .hr-slogan {
+          margin-top: 1px;
+        }
+      }
+
       #corpo{
         transition: margin-left .5s; /* pra dar aquele efeito de transição */
-    
       }
     
     /* breadcrumb */
