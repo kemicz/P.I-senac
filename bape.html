@@ -15,10 +15,8 @@
 <!-- navegção menu vertical -->
     <div id="mySidebar" class="menuvertical">
         <a href="javascript:void(0)" class="fecharmenu" onclick="fechaNav()">&times;</a>
-        <!-- barra de pesquisa -->
-        <div class="topnav">
-        <input type="text" placeholder="Search..">
-        </div>
+
+
         <a href="home.html">Home</a>
         <!-- dropdown coleções -->
         <div class="dropdown">
@@ -42,12 +40,13 @@
                 <button class="abrirmenu" onclick="abrirNav()">&#9776;</button>
                </div>
 
-         <!--slogan e barra de pesquisa -->
-    <section class="slogan">
-        <h2 class="slogan-h2">PIXAR É ARTE, SUJAR O TÊNIS FAZ PARTE</h2>
-       <hr>
-    </section>
-
+         <!--slogan -->
+         <section class="slogan">
+          <img src="home-fotos/slogan-2.png" class="img-slogan" width="100%">
+          <p class="p-slogan"> PIXAR É ARTE,SUJAR O TÊNIS FAZ PARTE</p>
+      </section>
+      <hr class="hr-slogan">
+      
         <!-- breadcrumb -->
         <ul class="breadcrumb">
             <li><a href="#">Home</a></li>
@@ -78,7 +77,7 @@
 </div>
 
     <p class="title-1"> Max Light Gray Bape</p>
-    <p><button class="button">Adicionar ao carrinho</button></p>
+    <p><button class="button">Comprar</button></p>
               </div>
 
 <!-- conteúdo que vai ter na navegação - 1 -->
@@ -99,39 +98,68 @@
   <h1 class="p-info-2--1">Max Light Gray Bape</h1>
   <h3 class="p-info-3--1">R$ 329,69. </h3>
   <p class="p-info-4--1">ou 10x de R$83,20</p>
-
-  <p class="p-info-5--1"> O tênis X LDG Estrada STA - Max Light Gray Bape 
-    <br>
-    é baseado no Air Max, usando veludo premium e apresentam
-    <br>
-    a marca Bape por toda parte. 
-    <br>
-    Lançamento extremamente limitado.</p>
-
+  <!-- aviso de produto esgotado -->
+  <div class="esgotado">
+    <h1>Desconto não aplicável!</h1>
+    <p> Este produto não está apto para nenhum tipo de promoção
+    </p>
+    <p>Infelizmente, este produto está esgotado.
+      <br>
+       Cadastre-se no nosso site e seja o primeiro 
+       <br>
+       a saber sobre futuros lançamentos.
+    </p>
+    </div>
   <div class="button--1-1" >
-    <button class="button--2-1">Adicionar ao carrinho</button>
-    <button class="button--4-1">Adicionar aos favoritos</button>
-  </div>
+    <button class="button--2-1">
+      Quero me cadastrar!
+    </button>
 
+<div class="myDIV">
+  <button class="button--4-1"> Comprar Agora</button>
+</div>
+<div class="hide">Produto Indisponível...</div>
+      
+  </div>
   <hr>
-<!-- lermais -->
-<h1 class="p-info-2--1">Cuidados com o produto:</h1>
-  <p class="p-info-6--1" >Para preservar a beleza do seu produto, recomendamos que você siga estas orientações para seu cuidado: 
-    <span id="dots">...</span> 
-    <br> 
-    <span id="more">
-    - Limpe o couro granulado ou liso com um pano úmido e macio. Quando o couro estiver seco, aplique um creme incolor de qualidade e engraxe em movimentos circulares com um pano macio.
-    <br>
-    - Guarde os sapatos nas duas bolsas de feltro fornecidas e armazene-os em local fresco, seco e arejado.
-    <br>
-    - Evite contato com água, qualquer substância que contenha álcool (perfumes, solventes, etc.) ou óleo (maquiagem), bem como produtos abrasivos em geral. Se os sapatos entrarem em contato com a água, é importante deixar que sequem completamente em formas de madeira para sapatos.
-    <br>
-    - É importante permitir que seus tênis sejam arejados naturalmente e, para este fim, eles têm uma palmilha removível. Se seus tênis ficarem molhados, simplesmente remova a palmilha e deixe-os secar em local fresco e bem ventilado. Isto garantirá mais conforto ao usá-los da próxima vez.
-  </span></p>
-<div class="button--5-1">
-<button onclick="myFunction()" id="myBtn">
-  Ler mais
-</button>
+    <!-- acordeão -->
+    <details class="details-1">
+      <summary class="summary-1">Detalhes</summary>
+      <hr>
+      <p class="p-info-6--1"> - Fecho de cadarço com tira de velcro
+        <br>
+        - Cabedal de couro
+        <br>
+        - Forro têxtil
+        <br>
+        - Solado de borracha
+    </p>
+    </details>
+    
+    <details class="details-1">
+      <summary class="summary-1">Cuidados</summary>
+      <hr>
+      <p class="p-info-6--1"> 
+        - Limpe o couro granulado ou liso com um pano úmido e macio. Quando o couro estiver seco, aplique um creme incolor de qualidade e engraxe em movimentos circulares com um pano macio.
+        <br>
+        - Guarde os sapatos nas duas bolsas de feltro fornecidas e armazene-os em local fresco, seco e arejado.
+        <br>
+        - Evite contato com água, qualquer substância que contenha álcool (perfumes, solventes, etc.) ou óleo (maquiagem), bem como produtos abrasivos em geral. Se os sapatos entrarem em contato com a água, é importante deixar que sequem completamente em formas de madeira para sapatos.
+        <br>
+        - É importante permitir que seus tênis sejam arejados naturalmente e, para este fim, eles têm uma palmilha removível. Se seus tênis ficarem molhados, simplesmente remova a palmilha e deixe-os secar em local fresco e bem ventilado. Isto garantirá mais conforto ao usá-los da próxima vez.
+    </p>
+    </details>
+    
+    <details class="details-1">
+      <summary class="summary-1">Descrição</summary>
+      <hr>
+      <p class="p-info-6--1">O tênis X LDG Estrada STA - Max Light Gray Bape 
+        é baseado no Air Max, usando veludo premium e apresentam
+        a marca Bape por toda parte. 
+        Lançamento extremamente limitado.
+      </p>
+    </details>
+    <!-- acordeão -->
 </section>
 </div>
 </div>
@@ -160,7 +188,7 @@
 </div>
 
   <p class="title-2">Burgundy Red High Cane</p>
-  <p><button class="button">Adicionar ao carrinho</button></p>
+  <p><button class="button">Comprar</button></p>
 </div>
 
 <!-- conteúdo que vai ter na navegação - 2 -->
@@ -182,19 +210,69 @@
   <p class="p-info-2--2"> Burgundy Red High Cane
   <h3 class="p-info-3--2">R$ 894,16. </h3>
   <p class="p-info-4--2">ou 10x de R$83,20</p>
-  <p class="p-info-5--2"> O tênis BAPE STA MI #2 M2 - Burgundy Red High Cane
+  
+ <!-- aviso de produto esgotado -->
+ <div class="esgotado">
+  <h1>Desconto não aplicável!</h1>
+  <p> Este produto não está apto para nenhum tipo de promoção
+  </p>
+  <p>Infelizmente, este produto está esgotado.
     <br>
-    é baseado no Nike Jordan Mid usando couro premium e apresentam
-    <br>
-    a marca Bape por toda parte. 
-    <br>
-    Lançamento extremamente limitado.</p>
-<!-- padrão de botão -->
-    <div class="button--1-1" >
-      <button class="button--2-1">Adicionar ao carrinho</button>
-      <button class="button--4-1">Adicionar aos favoritos</button>
-    </div>
+     Cadastre-se no nosso site e seja o primeiro 
+     <br>
+     a saber sobre futuros lançamentos.
+  </p>
+  </div>
+<div class="button--1-1" >
+  <button class="button--2-1">
+    Quero me cadastrar!
+  </button>
+
+<div class="myDIV">
+<button class="button--4-1"> Comprar Agora</button>
+</div>
+<div class="hide">Produto Indisponível...</div>
+  
+</div>
+  <hr>
+  <!-- acordeão -->
+  <details class="details-2">
+    <summary class="summary-2">Detalhes</summary>
     <hr>
+    <p class="p-info-6--2"> - Fecho de cadarço com tira de velcro
+      <br>
+      - Cabedal de couro
+      <br>
+      - Forro têxtil
+      <br>
+      - Solado de borracha
+  </p>
+  </details>
+  
+  <details class="details-2">
+    <summary class="summary-2">Cuidados</summary>
+    <hr>
+    <p class="p-info-6--2"> 
+      - Limpe o couro granulado ou liso com um pano úmido e macio. Quando o couro estiver seco, aplique um creme incolor de qualidade e engraxe em movimentos circulares com um pano macio.
+      <br>
+      - Guarde os sapatos nas duas bolsas de feltro fornecidas e armazene-os em local fresco, seco e arejado.
+      <br>
+      - Evite contato com água, qualquer substância que contenha álcool (perfumes, solventes, etc.) ou óleo (maquiagem), bem como produtos abrasivos em geral. Se os sapatos entrarem em contato com a água, é importante deixar que sequem completamente em formas de madeira para sapatos.
+      <br>
+      - É importante permitir que seus tênis sejam arejados naturalmente e, para este fim, eles têm uma palmilha removível. Se seus tênis ficarem molhados, simplesmente remova a palmilha e deixe-os secar em local fresco e bem ventilado. Isto garantirá mais conforto ao usá-los da próxima vez.
+  </p>
+  </details>
+  
+  <details class="details-2">
+    <summary class="summary-2">Descrição</summary>
+    <hr>
+    <p class="p-info-6--2">O tênis BAPE STA MI #2 M2 - Burgundy Red High Cane
+      é baseado no Nike Jordan Mid usando couro premium e apresentam
+      a marca Bape por toda parte.
+      Lançamento extremamente limitado.
+    </p>
+  </details>
+  <!-- acordeão -->
 </section>
 </div>
 </div>
@@ -245,18 +323,68 @@
   <p class="p-info-2--3"> Mint Velvet Low Top
     <h3 class="p-info-3--3">R$ 726,51. </h3>
     <p class="p-info-4--3">ou 10x de R$83,20</p>
-    <p class="p-info-5--3"> O tênis BAPE STA #3 M1 - Mint Velvet Low Top 
-    <br>
-    é baseado no Nike Dunk usando veludo premium e apresentam
-    <br>
-    a marca Bape por toda parte. 
-    <br>
-    Lançamento extremamente limitado.</p>
-    <div class="button--1-1" >
-      <button class="button--2-1">Adicionar ao carrinho</button>
-      <button class="button--4-1">Adicionar aos favoritos</button>
+
+  <!-- aviso de produto esgotado -->
+  <div class="esgotado">
+    <h1>Desconto não aplicável!</h1>
+    <p> Este produto não está apto para nenhum tipo de promoção
+    </p>
+    <p>Infelizmente, este produto está esgotado.
+      <br>
+       Cadastre-se no nosso site e seja o primeiro 
+       <br>
+       a saber sobre futuros lançamentos.
+    </p>
+    </div>
+  <div class="button--1-1" >
+    <button class="button--2-1">
+      Quero me cadastrar!
+    </button>
+
+<div class="myDIV">
+  <button class="button--4-1"> Comprar Agora</button>
+</div>
+<div class="hide">Produto Indisponível...</div>
     </div>
     <hr>
+    <!-- acordeão -->
+<details class="details-3">
+  <summary class="summary-3">Detalhes</summary>
+  <hr>
+  <p class="p-info-5--3"> - Fecho de cadarço com tira de velcro
+    <br>
+    - Cabedal de couro
+    <br>
+    - Forro têxtil
+    <br>
+    - Solado de borracha
+</p>
+</details>
+
+<details class="details-3">
+  <summary class="summary-3">Cuidados</summary>
+  <hr>
+  <p class="p-info-6--3"> 
+    - Limpe o couro granulado ou liso com um pano úmido e macio. Quando o couro estiver seco, aplique um creme incolor de qualidade e engraxe em movimentos circulares com um pano macio.
+    <br>
+    - Guarde os sapatos nas duas bolsas de feltro fornecidas e armazene-os em local fresco, seco e arejado.
+    <br>
+    - Evite contato com água, qualquer substância que contenha álcool (perfumes, solventes, etc.) ou óleo (maquiagem), bem como produtos abrasivos em geral. Se os sapatos entrarem em contato com a água, é importante deixar que sequem completamente em formas de madeira para sapatos.
+    <br>
+    - É importante permitir que seus tênis sejam arejados naturalmente e, para este fim, eles têm uma palmilha removível. Se seus tênis ficarem molhados, simplesmente remova a palmilha e deixe-os secar em local fresco e bem ventilado. Isto garantirá mais conforto ao usá-los da próxima vez.
+</p>
+</details>
+
+<details class="details-3">
+  <summary class="summary-3">Descrição</summary>
+  <hr>
+  <p class="p-info-6--3">O tênis BAPE STA #3 M1 - Mint Velvet Low Top
+    é baseado no Nike Dunk usando veludo premium e apresentam
+    a marca Bape por toda parte.
+    Lançamento extremamente limitado.
+  </p>
+</details>
+<!-- acordeão -->
 </section>
 </div>
 </li>
@@ -288,7 +416,7 @@
 </div>
 
     <p class="title-4">Low Textured Black Snake</p>
-    <p><button class="button">Adicionar ao carrinho</button></p>
+    <p><button class="button">Comprar</button></p>
     </div>
 
 <!-- conteúdo que vai ter na navegação - 4 -->
@@ -309,18 +437,69 @@
   <p class="p-info-2--4"> Low Textured Black Snake 
     <h3 class="p-info-3--4">R$ R$ 927,69 </h3>
     <p class="p-info-4--4">ou 10x de R$83,20</p>
-    <p class="p-info-5--4"> O tênis Snake BAPE STA M1 - Low Textured Black Snake 
-    <br>
-    é baseado no Nike Dunk usando couro premium texturizado e apresentam
-    <br>
-    a marca Bape por toda parte. 
-    <br>
-    Lançamento extremamente limitado.</p>
-    <div class="button--1-1" >
-      <button class="button--2-1">Adicionar ao carrinho</button>
-      <button class="button--4-1">Adicionar aos favoritos</button>
+
+  <!-- aviso de produto esgotado -->
+  <div class="esgotado">
+    <h1>Desconto não aplicável!</h1>
+    <p> Este produto não está apto para nenhum tipo de promoção
+    </p>
+    <p>Infelizmente, este produto está esgotado.
+      <br>
+       Cadastre-se no nosso site e seja o primeiro 
+       <br>
+       a saber sobre futuros lançamentos.
+    </p>
+    </div>
+  <div class="button--1-1" >
+    <button class="button--2-1">
+      Quero me cadastrar!
+    </button>
+
+<div class="myDIV">
+  <button class="button--4-1"> Comprar Agora</button>
+</div>
+<div class="hide">Produto Indisponível...</div>
     </div>
     <hr>
+
+<!-- acordeão -->
+<details class="details-4">
+  <summary class="summary-4">Detalhes</summary>
+  <hr>
+  <p class="p-info-5--4"> - Fecho de cadarço com tira de velcro
+    <br>
+    - Cabedal de couro
+    <br>
+    - Forro têxtil
+    <br>
+    - Solado de borracha
+</p>
+</details>
+
+<details class="details-4">
+  <summary class="summary-4">Cuidados</summary>
+  <hr>
+  <p class="p-info-5--4"> 
+    - Limpe o couro granulado ou liso com um pano úmido e macio. Quando o couro estiver seco, aplique um creme incolor de qualidade e engraxe em movimentos circulares com um pano macio.
+    <br>
+    - Guarde os sapatos nas duas bolsas de feltro fornecidas e armazene-os em local fresco, seco e arejado.
+    <br>
+    - Evite contato com água, qualquer substância que contenha álcool (perfumes, solventes, etc.) ou óleo (maquiagem), bem como produtos abrasivos em geral. Se os sapatos entrarem em contato com a água, é importante deixar que sequem completamente em formas de madeira para sapatos.
+    <br>
+    - É importante permitir que seus tênis sejam arejados naturalmente e, para este fim, eles têm uma palmilha removível. Se seus tênis ficarem molhados, simplesmente remova a palmilha e deixe-os secar em local fresco e bem ventilado. Isto garantirá mais conforto ao usá-los da próxima vez.
+</p>
+</details>
+
+<details class="details-4">
+  <summary class="summary-4">Descrição</summary>
+  <hr>
+  <p class="p-info-5--4">O tênis Snake BAPE STA M1 - Low Textured Black Snake
+    é baseado no Nike Dunk usando couro premium texturizado e apresentam
+    a marca Bape por toda parte.
+    Lançamento extremamente limitado.
+  </p>
+</details>
+<!-- acordeão -->
 </section>
 </div>
 </div>
@@ -348,7 +527,7 @@
 </div>
 
        <p class="title-5">Space Gray With Low Blue Accents</p>
-       <p><button class="button">Adicionar ao carrinho</button></p>
+       <p><button class="button">Comprar</button></p>
 </div>
 
 <!-- conteúdo que vai ter na navegação - 5 -->
@@ -370,18 +549,69 @@
   <p class="p-info-2--5"> Space Gray With Low Blue Accents
     <h3 class="p-info-3--5">R$ 832,69 </h3>
   <p class="p-info-4--5">ou 10x de R$83,20</p>
-  <p class="p-info-5--5"> O tênis BAPE SK8 STA #2 - Space Gray With Low Blue Accents.
-    <br>
-    é baseado no Nike Dunk usando veludo premium e apresentam
-    <br>
-    a marca Bape por toda parte. 
-    <br>
-    Lançamento extremamente limitado.</p>
-    <div class="button--1-1" >
-      <button class="button--2-1">Adicionar ao carrinho</button>
-      <button class="button--4-1">Adicionar aos favoritos</button>
+
+    <!-- aviso de produto esgotado -->
+    <div class="esgotado">
+      <h1>Desconto não aplicável!</h1>
+      <p> Este produto não está apto para nenhum tipo de promoção
+      </p>
+      <p>Infelizmente, este produto está esgotado.
+        <br>
+         Cadastre-se no nosso site e seja o primeiro 
+         <br>
+         a saber sobre futuros lançamentos.
+      </p>
+      </div>
+
+<div class="button--1-1" >
+  <button class="button--2-1">
+    Quero me cadastrar!
+  </button>
+    
+<div class="myDIV">
+   <button class="button--4-1"> Comprar Agora</button>
+</div>
+<div class="hide">Produto Indisponível...</div>
+
     </div>
     <hr>
+    <!-- acordeão -->
+<details class="details-5">
+  <summary class="summary-5">Detalhes</summary>
+  <hr>
+  <p class="p-info-6--5"> - Fecho de cadarço com tira de velcro
+    <br>
+    - Cabedal de couro
+    <br>
+    - Forro têxtil
+    <br>
+    - Solado de borracha
+</p>
+</details>
+
+<details class="details-5">
+  <summary class="summary-5">Cuidados</summary>
+  <hr>
+  <p class="p-info-6--5"> 
+    - Limpe o couro granulado ou liso com um pano úmido e macio. Quando o couro estiver seco, aplique um creme incolor de qualidade e engraxe em movimentos circulares com um pano macio.
+    <br>
+    - Guarde os sapatos nas duas bolsas de feltro fornecidas e armazene-os em local fresco, seco e arejado.
+    <br>
+    - Evite contato com água, qualquer substância que contenha álcool (perfumes, solventes, etc.) ou óleo (maquiagem), bem como produtos abrasivos em geral. Se os sapatos entrarem em contato com a água, é importante deixar que sequem completamente em formas de madeira para sapatos.
+    <br>
+    - É importante permitir que seus tênis sejam arejados naturalmente e, para este fim, eles têm uma palmilha removível. Se seus tênis ficarem molhados, simplesmente remova a palmilha e deixe-os secar em local fresco e bem ventilado. Isto garantirá mais conforto ao usá-los da próxima vez.
+</p>
+</details>
+
+<details class="details-5">
+  <summary class="summary-5">Descrição</summary>
+  <hr>
+  <p class="p-info-6--5">O tênis BAPE SK8 STA #2 - Space Gray With Low Blue Accents.
+    é baseado no Nike Dunk usando veludo premium e apresentam
+    a marca Bape por toda parte.
+  </p>
+</details>
+<!-- acordeão -->
 </section>
 </div>
 </div>
@@ -410,7 +640,7 @@
 </div>
 
   <p class="title-6">Low Moss Green</p>
-  <p><button class="button">Adicionar ao carrinho</button></p>
+  <p><button class="button">Comprar</button></p>
         </div>
 
 
@@ -432,18 +662,70 @@
   <p class="p-info-2"> Low Moss Green
     <h3 class="p-info-3">R$ 726,51. </h3>
     <p class="p-info-4">ou 10x de R$83,20</p>
-    <p class="p-info-5"> O tênis BAPE SK8 STA #5 M - Low Moss Green
-    <br>
-    é baseado no Nike Dunk usando couro premium e apresentam
-    <br>
-    a marca Bape por toda parte. 
-    <br>
-    Lançamento extremamente limitado.</p>
-    <div class="button--1-1" >
-      <button class="button--2-1">Adicionar ao carrinho</button>
-      <button class="button--4-1">Adicionar aos favoritos</button>
+    
+   <!-- aviso de produto esgotado -->
+   <div class="esgotado">
+    <h1>Desconto não aplicável!</h1>
+    <p> Este produto não está apto para nenhum tipo de promoção
+    </p>
+    <p>Infelizmente, este produto está esgotado.
+      <br>
+       Cadastre-se no nosso site e seja o primeiro 
+       <br>
+       a saber sobre futuros lançamentos.
+    </p>
+    </div>
+  <div class="button--1-1" >
+    <button class="button--2-1">
+      Quero me cadastrar!
+    </button>
+
+<div class="myDIV">
+  <button class="button--4-1"> Comprar Agora</button>
+</div>
+<div class="hide">Produto Indisponível...</div>
     </div>
     <hr>
+
+<!-- acordeão -->
+<details>
+  <summary>Detalhes</summary>
+  <hr>
+  <p> - Fecho de cadarço com tira de velcro
+    <br>
+    - Cabedal de couro
+    <br>
+    - Forro têxtil
+    <br>
+    - Solado de borracha
+</p>
+</details>
+
+<details>
+  <summary>Cuidados</summary>
+  <hr>
+  <p class="p-info-6"> 
+    - Limpe o couro granulado ou liso com um pano úmido e macio. Quando o couro estiver seco, aplique um creme incolor de qualidade e engraxe em movimentos circulares com um pano macio.
+    <br>
+    - Guarde os sapatos nas duas bolsas de feltro fornecidas e armazene-os em local fresco, seco e arejado.
+    <br>
+    - Evite contato com água, qualquer substância que contenha álcool (perfumes, solventes, etc.) ou óleo (maquiagem), bem como produtos abrasivos em geral. Se os sapatos entrarem em contato com a água, é importante deixar que sequem completamente em formas de madeira para sapatos.
+    <br>
+    - É importante permitir que seus tênis sejam arejados naturalmente e, para este fim, eles têm uma palmilha removível. Se seus tênis ficarem molhados, simplesmente remova a palmilha e deixe-os secar em local fresco e bem ventilado. Isto garantirá mais conforto ao usá-los da próxima vez.
+</p>
+</details>
+
+<details>
+  <summary>Descrição</summary>
+  <hr>
+  <p class="p-info-7">O tênis BAPE SK8 STA #5 M - Low Moss Green
+    é baseado no Nike Dunk usando couro premium e apresentam
+    a marca Bape por toda parte.
+    Lançamento extremamente limitado.
+  </p>
+</details>
+<!-- acordeão -->
+
 </section>
 </div>
 </div>
