@@ -12,7 +12,7 @@ function abrirNav() {
 
 /* navegação lateral para os tênis - 6 */
 function openNav(){
-  document.getElementById("mySidenav").style.width = "75%";
+  document.getElementById("mySidenav").style.width = "85%";
 }
 
 function closeNav() {
@@ -22,7 +22,7 @@ function closeNav() {
 
 /* navegação lateral para os tênis - 5 */
 function abrirNav5(){
-  document.getElementById("mySidenav-5").style.width = "75%";
+  document.getElementById("mySidenav-5").style.width = "85%";
 }
 
 function fecharNav5() {
@@ -32,7 +32,7 @@ function fecharNav5() {
 
 /* navegação lateral para os tênis - 4 */
 function openNav4(){
-  document.getElementById("mySidenav-4").style.width = "75%";
+  document.getElementById("mySidenav-4").style.width = "85%";
 }
 
 function closeNav4(){
@@ -42,7 +42,7 @@ function closeNav4(){
 
 /* navegação lateral para os tênis - 3 */
 function openNav3(){
-  document.getElementById("mySidenav-3").style.width = "75%";
+  document.getElementById("mySidenav-3").style.width = "85%";
 }
 
 function closeNav3() {
@@ -52,7 +52,7 @@ function closeNav3() {
 
 /* navegação lateral para os tênis - 2 */
 function openNav2(){
-  document.getElementById("mySidenav-2").style.width = "75%";
+  document.getElementById("mySidenav-2").style.width = "85%";
 }
 
 function closeNav2() {
@@ -62,7 +62,7 @@ function closeNav2() {
 
 /* navegação lateral para os tênis - 1 */
 function openNav1(){
-  document.getElementById("mySidenav-1").style.width = "75%";
+  document.getElementById("mySidenav-1").style.width = "85%";
 }
 
 function closeNav1() {
@@ -70,21 +70,3 @@ function closeNav1() {
   document.getElementById("main-1").style.marginLeft= "0";
 }
 
-/* ler mais - 1 */
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Ler mais";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Ler menos";
-    moreText.style.display = "inline";
-  }
-}
-
-/* teste adicionar aos favoritos */
