@@ -19,6 +19,16 @@ body{
       transition: 0.5s; 
     }
     
+.logo{
+  width: 150px;
+margin-left: 25px;
+margin-top: 10px;
+}
+
+.hr-menuvertical{
+  margin-top: 3px;
+}
+
     /* Os links do menu vertical */
     .menuvertical a {
       padding: 8px 8px 8px 32px;
@@ -36,7 +46,7 @@ body{
     /* posição e estilo do  botão de fechar */
     .menuvertical .fecharmenu {
       font-size: 36px;
-      margin-left: 70%;
+      float: right;
     }
     
     /*o botão usado para abrir menu vertical */
@@ -51,17 +61,23 @@ body{
       border-radius:100px;
       position: fixed;
       margin-left: 30px;
+      margin-top: 10px;
+    }    
+    @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      .abrirmenu{
+        margin-left: 10px;
+        margin-top: 1px;
+      }
     }
     
     .abrirmenu:hover {
       background-color: #444;
-      
     }
   
     #icone{
       transition: margin-left .5s; /* pra dar aquele efeito de transição */
     }
-  
   
     @media only screen and (max-width: 768px) {
       /* For mobile phones: */
@@ -69,7 +85,6 @@ body{
         width: 100%;
       }
     }
-  
   
   /* posição do container <div> */
   .dropdown {
@@ -102,10 +117,6 @@ body{
   
   /* Altera a cor de fundo do botão suspenso quando o conteúdo suspenso for exibido */
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-  .hr-menuvertical{
-    margin-top: 25px;
-  }
   
   .slogan{
     margin-top: 10px;
@@ -164,6 +175,16 @@ body{
   margin-top: 30px;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 700px) {
+  .container-fotos {
+    margin-bottom: 20px;
+    border: none;
+    margin-top: 0px;
+    padding: 0%;
+    width: auto;
+
+  }
+}
 
 /* botão coleção */
 .button {
@@ -177,9 +198,18 @@ body{
   width: 20%;
   transition: all 0.5s;
   cursor: pointer;
-  border: solid 2px white;
+  border: solid 2px darkslategray;
   margin-top: 30px;
-  margin-left: 100px;
+  margin-left: 175px;
+}
+
+@media screen and (max-width: 700px) {
+  .button {
+    font-size: small;
+    width: 80%;
+    margin-top: 10px;
+    margin-left:40px ;
+  }
 }
 
 .button span {
@@ -221,16 +251,27 @@ body{
   margin-top: 30px;
   margin-left: 20px;
   display: inline-block;
-  padding: 20px;
-
+  padding: 100px;
+}
+@media screen and (max-width: 700px) {
+  .container-fade {
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 0%;
+    padding: 30px;
+  }
 }
 
 .image {
   display: block;
   width: 100%;
   height: auto;
-  border: solid 2px white;
-  border-radius: 50%;
+  border: solid 2px darkslategray;
+}
+@media screen and (max-width: 700px) {
+  .image {
+    border: solid 2px white;
+  }
 }
 
 .overlay {
@@ -251,21 +292,18 @@ body{
 }
 
 .texto {
-  color: white;
-  font-size: 20px;
+  color: darkslategray;
+  font-size: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  border: solid 1px white;
-  width: 90%;
-  border-radius: 20%;
   text-align: center;
 }
 
 .b-coleção{
-border:  solid 1px white;
+border:  solid 1px darkslategray;
 }
 
 .a-coleção{
@@ -273,5 +311,11 @@ color: black;
 }
 
 .sec-coleção{
-text-align: center;
+margin-left: 120px;
+}
+@media screen and (max-width: 700px) {
+  .sec-coleção {
+    width: 100%;
+    margin-left: 0%;
+  }
 }

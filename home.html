@@ -14,10 +14,13 @@
     
 <!-- navegção menu vertical -->
     <div id="mySidebar" class="menuvertical">
+      <!-- logo -->
+      <img src="logo/logo.png" alt="" class="logo">
         <a href="javascript:void(0)" class="fecharmenu" onclick="fechaNav()">&times;</a>
         <hr class="hr-menuvertical">
-        <a href="#">Home</a>
+
         <!-- dropdown coleções -->
+        <a href="#">Home</a>
         <div class="dropdown">
           <a href="coleções.html" >Coleções</a>
           <div class="dropdown-content">
@@ -31,7 +34,6 @@
         <a href="Info.html">Sobre nós</a>
         <a href="#">Carrinho</a>
       </div>
-
 
 <section id="corpo">
 
@@ -56,9 +58,11 @@
     <li><img src="bape-fotos/bape menta-baixo.jpg" alt="" width="100%"></li>
 </div>
 
+<a href="coleções.html">
 <button class="button" style="vertical-align:middle">
-  <span> Coleções </span>
+  <span class="p-coleção" id="nome-cole"> Coleções </span>
 </button>
+</a>
 
 <!-- fade na caixa para coleções -->
 <section class="sec-coleção">
@@ -66,7 +70,7 @@
 <div class="container-fade">
   <img src="home-fotos/bape icon - Editado.png" alt="Avatar" class="image" >
   <div class="overlay">
-    <div class="texto">Bape</div>
+    <div class="texto" id="nome-cole">Bape</div>
   </div>
 </div>
 </a>
@@ -75,7 +79,7 @@
 <div class="container-fade" >
   <img src="home-fotos/ak icon - Editado.png" alt="Avatar" class="image" >
   <div class="overlay">
-    <div class="texto">TLBL</div>
+    <div class="texto" id="nome-cole">TLBL</div>
   </div>
 </div>
 </a>
@@ -84,7 +88,7 @@
 <div class="container-fade" >
   <img src="home-fotos/lv icon - Editado.png" alt="Avatar" class="image" >
   <div class="overlay">
-    <div class="texto">Louis Vitton</div>
+    <div class="texto" id="nome-cole">Louis Vitton</div>
   </div>
 </div>
 </a>
@@ -93,7 +97,7 @@
 <div class="container-fade">
   <img src="home-fotos/adidas logo - Editado.png" alt="Avatar" class="image" >
   <div class="overlay">
-    <div class="texto">Adidas</div>
+    <div class="texto" id="nome-cole">Adidas</div>
   </div>
 </div>
 </a>
