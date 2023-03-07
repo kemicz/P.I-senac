@@ -1,7 +1,6 @@
 /* Defina a largura da barra lateral para 250px e a margem esquerda do conteúdo da página para 250px */
 function abrirNav() {
-    document.getElementById("mySidebar").style.width = "260px";
-    document.getElementById("corpo").style.marginLeft = "260px";
+    document.getElementById("mySidebar").style.width = "300px";
 
   }
   

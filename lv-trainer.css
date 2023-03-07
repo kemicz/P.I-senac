@@ -10,6 +10,12 @@ max-width: 100%;
 text-align: center;
 justify-content: center;
 }
+
+.logo{
+  width: 150px;
+margin-left: 25px;
+margin-top: 10px;
+}
     
 /* menu */
 .menuvertical {
@@ -40,8 +46,8 @@ color: #aaa5a5;
       
 /* posição e estilo do  botão de fechar */
 .menuvertical .fecharmenu {
-font-size: 36px;
-margin-left: 70%;
+  font-size: 36px;
+  float: right;
 }
       
 /*o botão usado para abrir menu vertical */
@@ -56,6 +62,7 @@ border: none;
 border-radius:100px;
 position: fixed;
 margin-left: 30px;
+margin-top: 10px;
 }
 
 @media screen and (max-width: 490px) {
@@ -83,7 +90,7 @@ width: 100%;
     
     
 .hr-menuvertical{
-margin-top: 25px;
+margin-top: 3px;
 }
 
 /* posição do container <div> */
