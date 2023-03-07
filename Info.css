@@ -12,6 +12,9 @@ body{
     margin-left: 25px;
     margin-top: 10px;
     }
+    .hr-menuvertical{
+      margin-top: 3px;
+    }
 
     /* menu */
     .menuvertical {
@@ -111,16 +114,44 @@ body{
     /* Altera a cor de fundo do botão suspenso quando o conteúdo suspenso for exibido */
     .dropdown:hover .dropbtn {background-color: #3e8e41;}
     
-      .slogan{
-        text-align: center;
-        font-size: larger;
-        width: 100%;
-      }
+    .slogan{
+      margin-top: 10px;
+      padding: 10px;
+    }
     
-      .slogan-h2{
-        padding-left: 10px;
+    @media screen and (max-width: 490px) {
+      .slogan {
+        padding: 10px;
       }
-      
+    }
+  
+    @media screen and (max-width: 700px) {
+      .img-slogan {
+        display: none;
+      }
+    }
+  
+    @media screen and (min-width: 700px) {
+      .p-slogan {
+        display: none;
+      }
+    }
+  
+    @media screen and (max-width: 700px) {
+      .p-slogan {
+        text-align: center;
+        font-size: x-large;
+        width: 100%;
+        margin-top: 40px;
+      }
+    }
+  
+    @media screen and (max-width: 700px) {
+      .hr-slogan {
+        margin-top: 1px;
+      }
+    }
+    
       #corpo{
         transition: margin-left .5s; /* pra dar aquele efeito de transição */
     

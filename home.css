@@ -164,15 +164,15 @@ margin-top: 10px;
   /* fotos inicio */
 .container-fotos{
   display: flex;
-  width: 80%;
+  width: 90%;
   padding: 10px;
   height: auto;
   border: 3px solid darkslategray;
   gap: 5px;
-  margin: auto;
   list-style: none;
   text-align: center;
   margin-top: 30px;
+  margin-left: 10px;
   margin-bottom: 60px;
 }
 @media screen and (max-width: 700px) {
@@ -185,6 +185,7 @@ margin-top: 10px;
 
   }
 }
+
 
 /* botão coleção */
 .button {
@@ -207,7 +208,7 @@ margin-top: 10px;
   .button {
     font-size: small;
     width: 80%;
-    margin-top: 10px;
+    margin-top: 40px;
     margin-left:40px ;
   }
 }
@@ -252,13 +253,15 @@ margin-top: 10px;
   margin-left: 20px;
   display: inline-block;
   padding: 100px;
+  margin-bottom: 100px;
 }
 @media screen and (max-width: 700px) {
   .container-fade {
     width: 30%;
     margin-left: 10px;
-    margin-top: 0%;
+    margin-top: 0px;
     padding: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -318,4 +321,64 @@ margin-left: 120px;
     width: 100%;
     margin-left: 0%;
   }
+}
+
+.desc{
+  width: 100%;
+}
+
+.novos-mod{
+  width: auto;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .novos-mod {
+    text-align: center;
+  }
+}
+
+
+/* container bape */
+.container-bape {
+  position: relative;
+  width: 50%;
+}
+
+.image-b {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-b {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container-bape:hover .overlay-b {
+  bottom: 0;
+  height: 100%;
+}
+
+.text-b {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.but-bape{
+  padding: 10px;
 }
