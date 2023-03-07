@@ -221,7 +221,6 @@ body{
         padding: 0 8px;
         background-color: #eceff1;
       }
-      
     
       @media screen and (max-width: 375px) {
         .column {
@@ -371,7 +370,6 @@ body{
       margin: 0%;
       margin-bottom: 50px;
     }
-    
 
     @media screen and (max-width: 700px) {
       .p-info-5 {font-size: 10px;}
@@ -382,7 +380,7 @@ body{
       border: none;
     }
 
-    /* acordeão */
+ /* acordeão */
 details{
   background-color: #eceff1;
   color: #617e77;
@@ -498,7 +496,7 @@ details[open] summary::after{
       border: none;
     }
 
-        /* acordeão */
+/* acordeão */
 .details-5{
   background-color: #f1efee;
   color: #8a888b;
@@ -1030,7 +1028,6 @@ transform: rotate(45deg);
       }
     }
 
-
     @media screen and (max-width: 700px) {
       .p-info-5--1 {font-size: 10px;}
     }
@@ -1108,7 +1105,6 @@ transform: rotate(45deg);
     .button--1-1{
       text-align: center;
       margin-top: 5%;
-      
     }
     
     .button--2-1 {
@@ -1160,13 +1156,6 @@ transform: rotate(45deg);
       color: red;
       padding: 10px;
     }
-
-    .button--5-1 {
-      border: none;
-      outline: 0;
-      text-align: center;
-      cursor: pointer;
-    }
     
     #myBtn{
       color: #5d3830;
@@ -1178,7 +1167,7 @@ transform: rotate(45deg);
       width: 100%;
     }
 
-    /* aviso de produto esgotado */
+/* aviso de produto esgotado */
 .esgotado{
   color: black;
   text-align: left;
