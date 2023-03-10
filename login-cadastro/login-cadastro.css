@@ -1,0 +1,220 @@
+/*  config global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* cores */
+
+:root{
+    --primary-color:#000000;
+    --secundary:#ffffff;
+    --text-color-dark:#000000;
+    --text-color-light:#ffffff;
+    --icon-color:#F3F3F3;
+}
+
+/* main */
+.main-login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* links/social */
+
+.social-icon{
+    text-decoration: none;
+    color: var(--text-color-dark);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: var(--icon-color);
+    box-shadow: 0 4px 4px #0004;
+    transition: .5s;
+
+}
+
+.social-icon:hover{
+    background-color: #808080;
+    transform: translateY(-15%);
+    color: var(--text-color-light);
+
+}
+
+.form-social{
+    display: flex;
+    gap: 24PX;
+}
+
+/* texto */
+
+
+
+/* login-container */
+
+.login-container{
+    position:relative ;  
+    height: 480px;
+    width: 768px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgb(94, 94, 94);
+    overflow: hidden;
+}
+
+/* form-container */
+
+.form-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+/* formulario */
+
+.formulario-01{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 0px;
+
+}
+
+.form-login{
+    display: flex;
+    
+}
+
+.form-cadastro{
+    display: flex;
+}
+
+.form-icon{
+    display: flex;
+}
+
+/* titulo */
+
+.form-title{
+    font-size:48px;
+    font-weight: 400;
+    color: black;
+
+}
+
+/* inputs */
+
+.form-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-input{
+    width: 300px;
+    height: 40px;
+    padding: 10px 20px;
+    border-style: none;
+    background-color: #e4e2e2 ;
+}
+
+/* botao */
+
+.form-button{
+    width: 140px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid  var(--primary-color);
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.form-button:hover{
+    background-color: var(--primary-color);
+    color: var(--secundary);
+    transition: .5s;
+}
+
+/* overlay */
+
+.overlay-login{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:var(--primary-color);
+    color: var(--text-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 40;   
+}
+
+.overlay-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    color: var(--text-color-light);
+    text-align: center;
+    transform: translateX(100%); 
+}
+
+.login-container .toggle .overlay-container{
+    transform: translateX(0);
+}
+
+.form-button-light{
+    width: 140px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid  var(--secundary);
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--secundary);
+    cursor: pointer;
+}
+
+.form-title-light{
+    font-size:48px;
+    font-weight: 400;
+    color:var(--secundary);
+
+}
+
+.form-button-light:hover{
+    background-color: var(--primary-color);
+    color: var(--secundary);
+    transition: .5s;
+}
+
+/* animaçao */
+
+
+
+
+
+
+
+
+
+
