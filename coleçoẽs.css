@@ -28,7 +28,7 @@ body{
  }
  
  @keyframes shimmer {
-  100% {
+  100% { 
   transform: translateX(100%);
   }
  }

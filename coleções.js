@@ -15,7 +15,7 @@ se tiver mais de uma Class, eu posso passar uma função para cada*/
  preload.classList.remove('preload')
  /* classList.() = é usado para algo como:
  
- "quando tal coisa acontecer, remova essa Classe"
+ "quando tal coisa acontecer, remova essa Classe" 
  */
  }, 2000)
 })
