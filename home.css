@@ -199,7 +199,7 @@ margin-top: 10px;
   width: 20%;
   transition: all 0.5s;
   cursor: pointer;
-  border: solid 2px darkslategray;
+  border: solid 2px white;
   margin-top: 30px;
   margin-left: 175px;
 }
@@ -269,7 +269,7 @@ margin-top: 10px;
   display: block;
   width: 100%;
   height: auto;
-  border: solid 2px darkslategray;
+  border: solid 2px white;
 }
 @media screen and (max-width: 700px) {
   .image {

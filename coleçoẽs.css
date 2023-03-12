@@ -4,9 +4,35 @@ body{
     padding: 0%;
     margin: 0%;
     max-width: 100%;
-    
     }
 
+/* pre load */
+.preload {
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  cursor: default;
+  z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+  position: relative;
+ }
+ 
+ .preload::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+  content: "";
+ }
+ 
+ @keyframes shimmer {
+  100% {
+  transform: translateX(100%);
+  }
+ }
+ 
     .logo{
       width: 150px;
     margin-left: 25px;
@@ -163,3 +189,27 @@ body{
     
       }
   
+
+.lista-cole{
+  list-style: none;
+  width: auto;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  .lista-cole {
+    display: list-item;
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  li {
+    display: list-item;
+    margin-top: 40px;
+  }
+}
