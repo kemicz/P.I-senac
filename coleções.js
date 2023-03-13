@@ -3,7 +3,7 @@ com VAR, o valor pode ser modificado a qualquer momento.
 
 já com CONST, o valor não pode ser modificado pois da erro.
 const = constante */
-const carregamento = document.querySelectorAll('.preload')
+const carregamento = document.querySelectorAll('.preload, #gif')
 /* querySelectorAll = é usado para poder chamar +1 classe ou id */
 carregamento.forEach((preload) => {
 /* forEach = é tipo:
@@ -17,8 +17,12 @@ se tiver mais de uma Class, eu posso passar uma função para cada*/
  
  "quando tal coisa acontecer, remova essa Classe"
  */
- }, 2000)
+ }, 1000)
 })
+
+/* tempo para fazer o gif sumir */
+setTimeout(function(){gif.style.display='none'; },1000);
+
 
 /* Defina a largura da barra lateral para 250px e a margem esquerda do conteúdo da página para 250px */
 function abrirNav() {
