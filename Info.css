@@ -157,27 +157,34 @@ body{
     
       }
 
-      .info-site{
-        padding-top: 10%;
-        padding-left: 20%;
-        padding-right: 20%;
-        text-align: center;
-      }
-
-      .info-site1{
-        padding-left: 20%;
-        padding-right: 20%;
-        text-align: center;
+      .feitobrasil{
+        float: left;
       }
       
-      .linha-texto{
-        width: 70%;
+      .text-myob{
+        padding-top: 4%;
+        padding-left: 45%;
+        padding-right: 6%;
       }
 
-      .texto-contato-info{ 
-        padding-left: 70%;
+      .text-myob2{
+        padding-left: 45%;
+        padding-right: 6%;
       }
 
-      .contatos-infos{
-        padding-left: 70%;
+      .hr-text{
+        height:5px; 
+        border:0; 
+        background:repeating-linear-gradient(to right, rgba(103,0,145,255) 5px, rgb(0, 0, 0) 50px);
+      }
+
+      .tirar-duvidas{
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        border-radius: 25px;
+        background-color: rgba(103,0,145,255);
       }
