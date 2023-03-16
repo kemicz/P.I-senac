@@ -4,7 +4,6 @@ body{
     padding: 0%;
     margin: 0%;
     max-width: 100%;
-    
     }
 
     .logo{
@@ -157,10 +156,11 @@ body{
   list-style: none;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1500px) {
   .feitobrasil {
     display: list-item;
     width: auto;
+    text-align: center;
   }
 }
 
@@ -177,71 +177,74 @@ body{
 .text-myob{
   margin-top: 50px;
   margin-left: 20px;
-  width: 40%;
+  width: 50%;
+  font-size: x-large;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 949px) {
   .text-myob {
-    width: 100%;
+    font-size: 50%;
     text-align: center;
     margin-top: 0%;
   }
 }
 
-      .acordeao-duvida{
-        display: flex;
-        justify-content: center;
-        padding-top: 5%;
-      }
+/* acordeão */
+.acord-duvida{
+  text-align: center;
+  width: 40%;
+  padding: 20px;
+  border: solid white;
+  background-color: rgba(103,0,145,255);
+}
 
-      .tirar-duvidas{
-        background-color: rgba(103,0,145,255);
-        border-radius: 25px;
-        align-items: center;
-        color: #ffffff;
-        display: flex;
-        width: 100%;
-        height: 60%;
-        padding-right: 30%;
-        padding-left: 30%;
-      }
+.details{
+  background-color:black;;
+  color: white;
+  margin-bottom: 15px;
+  border: solid white;
+  font-size: 20px;
+   cursor: pointer;
+  }
+          
+  .details, .summary{
+  user-select: none;
+  outline: none;
+  }
 
-      .detalhes-div{
-        display: flex;
-        justify-content: center;   
-        padding-left: 8%;  
-      }
+  .summary{
+    border: solid 2px white;
+    padding: 20px;
+    background-color: rgba(103,0,145,255);
+  }
 
-      .detalhes-2{
-          display: flex;
-          justify-content: center;   
-          padding-left: 8%; 
-          padding-top: 2%;  
-        }
+  .details p{
+  color: white;
+  margin-left: 15px;
+  }
+          
+  /* details[open] p{
+    color: #8a888b;
+  } */
+          
+  .details .summary::after{
+  content: "+";
+  float: right;
+  transition: transform .7s ease;
+  }
+  
+  .details [open] .summary::after{
+  transform: rotate(45deg);
+   }
 
-      details{
-        background-color: rgba(103,0,145,255);
-        color: #000000;
-        padding: 10px;
-        border-radius: 25px;
-        font-size: 20px;
-        text-align: center;
-        padding-left: 11%;
-        padding-right: 11%;
-      }
+.duvid-1,.duvid-2,.duvid-3 {
+  width: 50%;
+  justify-content: center;
+}
 
-      details p{
-        color: #ffffff;
-      }
-      
-      /* details[open] p{
-        color: #617e77;
-      } */
-      
-      @media screen and (max-width: 700px) {
-        details {
-          padding: 5%;
-          height: auto;
-          font-size: 10px;
-        }
-      }
+.container-duvidas{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
