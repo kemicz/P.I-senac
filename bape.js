@@ -98,20 +98,4 @@ function closeNav1() {
   document.getElementById("main-1").style.marginLeft= "0";
 }
 
-/* ler mais - 1 */
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Ler mais";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Ler menos";
-    moreText.style.display = "inline";
-  }
-}
                                         

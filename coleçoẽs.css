@@ -207,7 +207,32 @@ display: none;
         transition: margin-left .5s; /* pra dar aquele efeito de transição */
     
       }
-  
+
+/* breadcrumb */
+ul.breadcrumb {
+  padding: 10px 16px;
+  margin-left: 1%;
+  list-style: none;
+  }
+        
+  /* pra ficar do lado */
+  ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  }
+        
+  /* cor do (/) vai ser adicionado toda vez que colocar um link na lista */
+  ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: white;
+  content: "/\00a0";
+  }
+        
+  /* cor */
+  ul.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+  }
 
 .lista-cole{
   list-style: none;
