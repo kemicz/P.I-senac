@@ -167,17 +167,6 @@ body{
         padding-right: 6%;
       }
 
-      .text-myob2{
-        padding-left: 45%;
-        padding-right: 6%;
-      }
-
-      .hr-text{
-        height:5px; 
-        border:0; 
-        background:repeating-linear-gradient(to right, rgba(103,0,145,255) 5px, rgb(0, 0, 0) 50px);
-      }
-
       .acordeao-duvida{
         display: flex;
         justify-content: center;
