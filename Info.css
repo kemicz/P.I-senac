@@ -154,6 +154,8 @@ body{
   margin: 0%;
   padding: 0%;
   list-style: none;
+  margin-bottom: 10%;
+  margin-top: 5%;
 }
 
 @media screen and (max-width: 1500px) {
@@ -168,34 +170,43 @@ body{
   width: 50%;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1500px) {
   .img-myob {
-    width: 100%;
+    width: 90%;
   }
 }
 
 .text-myob{
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 20px;
   width: 50%;
   font-size: x-large;
 }
 
-@media screen and (max-width: 949px) {
+@media screen and (max-width: 1500px) {
   .text-myob {
-    font-size: 50%;
-    text-align: center;
+    font-size: medium;
     margin-top: 0%;
+    width: auto;
+    margin-left: 10px;
+    align-items: center;
+    margin-bottom: 100px;
   }
 }
 
 /* acordeão */
 .acord-duvida{
   text-align: center;
-  width: 40%;
+  width: 47%;
   padding: 20px;
   border: solid white;
-  background-color: rgba(103,0,145,255);
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .acord-duvida {
+   width: auto;
+  }
 }
 
 .details{
@@ -231,13 +242,14 @@ body{
   content: "+";
   float: right;
   transition: transform .7s ease;
+
   }
   
   .details [open] .summary::after{
   transform: rotate(45deg);
    }
 
-.duvid-1,.duvid-2,.duvid-3 {
+.duvid {
   width: 50%;
   justify-content: center;
 }
@@ -247,4 +259,145 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+margin-bottom: 10%;
+}
+
+@media screen and (max-width: 700px) {
+  .container-duvidas{
+   width: 100%;
+   margin-bottom: 100px;
+  }
+}
+
+
+/* parte do suporte */
+.hr1{
+  border: 2px solid rgba(103,0,145,255);
+}
+
+.container-suporte{
+  display: flex;
+  width: auto;
+  justify-content: center;
+  gap: 300px;
+  margin-top: 1%;
+}
+
+@media screen and (max-width: 700px) {
+  .container-suporte {
+    width: auto;
+    gap: 10px;
+  }
+}
+
+/* simbolo escudo */
+.img-escudo{
+width: 100px;
+height: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  .img-escudo p{
+    margin: 0%;
+  }
+}
+
+.escudo{
+  display: flex;
+  text-align: center;
+  width: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .escudo {
+    margin-left: 10px;
+    display: grid;
+    align-content: flex-start;
+  }
+}
+
+.escudo p{
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 700px) {
+  .escudo p{
+    margin: 0%;
+  }
+}
+
+
+/* simbolo caixa */
+.img-caixa{
+  width: 100px;
+  height: 100px;
+  }
+
+@media screen and (max-width: 700px) {
+  .img-caixa {
+    margin-left: 10px;
+    width: auto;
+  }
+}
+
+.caixa{
+  display: flex;
+  text-align: center;
+  width: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .caixa {
+    margin-left: 10px;
+    display: grid;
+    align-content: flex-start;
+    justify-items: center;
+  }
+}
+
+.caixa p{
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 700px) {
+  .caixa p{
+    margin: 0%;
+  }
+}
+
+/* simbolo pessoas */
+.img-pessoas{
+  width: 100px;
+  height: 100px;
+  }
+
+  @media screen and (max-width: 700px) {
+  .img-pessoas p{
+    margin: 0%;
+  }
+}
+
+
+.pessoas{
+  display: flex;
+  text-align: center;
+  width: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .pessoas {
+    margin-left: 10px;
+    display: grid;
+    align-content: flex-start;
+  }
+}
+
+.pessoas p{
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 700px) {
+  .pessoas p{
+    margin: 0%;
+  }
 }
