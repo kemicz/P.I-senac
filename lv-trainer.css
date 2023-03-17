@@ -1218,3 +1218,10 @@ display: block;
     text-align: center;
   }
 }
+
+.prod-esgotado{
+  text-align: center;
+  border: solid black 2px;
+  padding: 8px;
+  margin-top: 0%;
+}
