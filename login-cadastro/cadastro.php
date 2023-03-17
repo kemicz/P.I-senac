@@ -9,7 +9,7 @@
     if($query){
         echo "<script>
          alert('Cadastro realizado com sucesso');
-         window.location.replace('login.php');</script>";
+         window.location.replace('login-cadastro.html');</script>";
          }
     }
 ?>
