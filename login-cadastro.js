@@ -34,6 +34,7 @@ function abrirNav() {
     document.getElementById("icone").style.marginLeft = "0";
     document.getElementById("corpo").style.marginLeft = "0";
   }
+  
 
 'use strict'
 
