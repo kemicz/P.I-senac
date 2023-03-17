@@ -46,12 +46,6 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 
-// When the user clicks on <div>, open the popup
-function myFunction6() {
-  var popup = document.getElementById("myPopup-6");
-  popup.classList.toggle("show");
-}
-
 /* navegação lateral para os tênis - 5 */
 function abrirNav5(){
   document.getElementById("mySidenav-5").style.width = "85%";
@@ -60,12 +54,6 @@ function abrirNav5(){
 function fecharNav5() {
   document.getElementById("mySidenav-5").style.width = "0";
   document.getElementById("main-5").style.marginLeft= "0";
-}
-
-// When the user clicks on <div>, open the popup
-function myFunction5() {
-  var popup = document.getElementById("myPopup-5");
-  popup.classList.toggle("show");
 }
 
 /* navegação lateral para os tênis - 4 */
@@ -78,11 +66,6 @@ function closeNav4(){
   document.getElementById("main-4").style.marginLeft= "0";
 }
 
-// When the user clicks on <div>, open the popup
-function myFunction4() {
-  var popup = document.getElementById("myPopup-4");
-  popup.classList.toggle("show");
-}
 
 /* navegação lateral para os tênis - 3 */
 function openNav3(){
@@ -92,12 +75,6 @@ function openNav3(){
 function closeNav3() {
   document.getElementById("mySidenav-3").style.width = "0";
   document.getElementById("main-3").style.marginLeft= "0";
-}
-
-// When the user clicks on <div>, open the popup
-function myFunction3() {
-  var popup = document.getElementById("myPopup-3");
-  popup.classList.toggle("show");
 }
 
 /* navegação lateral para os tênis - 2 */
@@ -110,12 +87,6 @@ function closeNav2() {
   document.getElementById("main-2").style.marginLeft= "0";
 }
 
-// When the user clicks on <div>, open the popup
-function myFunction2() {
-  var popup = document.getElementById("myPopup-2");
-  popup.classList.toggle("show");
-}
-
 /* navegação lateral para os tênis - 1 */
 function openNav1(){
   document.getElementById("mySidenav-1").style.width = "85%";
@@ -124,10 +95,4 @@ function openNav1(){
 function closeNav1() {
   document.getElementById("mySidenav-1").style.width = "0";
   document.getElementById("main-1").style.marginLeft= "0";
-}
-
-// When the user clicks on <div>, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
 }
