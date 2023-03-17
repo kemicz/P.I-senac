@@ -14,7 +14,7 @@ if(isset($_POST['email']) && isset($_POST['senha'])){
         if(!isset($_SESSION)){
             session_start();
             $_SESSION['email']=$user['email'];
-            header('location:home.php');
+            header('location:index.html');
         }
     }
 }

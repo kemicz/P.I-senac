@@ -8,8 +8,7 @@
     $query= mysqli_query($conexao, $sql);
     if($query){
         echo "<script>
-         alert('Cadastro realizado com sucesso');
          window.location.replace('login-cadastro.html');</script>";
-         }
+        }
     }
 ?>
