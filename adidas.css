@@ -376,7 +376,6 @@ display: none;
       #mySidenav a {font-size: 18px;}
     }
     
-    
     .infos{
       background-color: #617e77;
       width: 40%;
@@ -446,10 +445,6 @@ details, summary{
 details p{
   color: #617e77;
 }
-
-/* details[open] p{
-  color: #617e77;
-} */
 
 details summary::after{
   content: "+";
@@ -1108,13 +1103,6 @@ transform: rotate(45deg);
       border-radius: 10px 0px 10px 0px ;
       border: solid 4px  white;
     }
-    @media screen and (max-width: 700px) {
-      .details-1 {
-        padding: 5%;
-        height: auto;
-        font-size: 10px;
-      }
-    }
     
     .button--1-1{
       text-align: center;
@@ -1171,16 +1159,6 @@ transform: rotate(45deg);
       display: block;
       color: red;
       padding: 10px;
-    }
-    
-    #myBtn{
-      color: #5d3830;
-      background-color: white;
-      padding: 1%;
-      border: none;
-      outline: 0;
-      cursor: pointer;
-      width: 100%;
     }
 
 /* aviso de produto esgotado */

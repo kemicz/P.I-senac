@@ -127,14 +127,6 @@ margin-top: 10px;
     transition: margin-left .5s; /* pra dar aquele efeito de transição */
   }
 
-
-  @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [id*="mySidebar"] {
-      width: 100%;
-    }
-  }
-
   .hr-menuvertical{
     margin-top: 3px;
   }
@@ -150,7 +142,6 @@ margin-top: 10px;
   display: none;
   position: relative;
   background-color: #a3a3a3;
-  z-index: 1;
   width: 500px;
 }
 
@@ -329,6 +320,40 @@ gap: 40px;
 justify-content: center;
 }
 
+/* slogan na vitrine */
+.slogan-adidas{
+  padding: 10px;
+  display: block;
+}
+
+@media screen and (max-width: 490px) {
+  .slogan-adidas {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .img-slogan-adidas {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .p-slogan-adidas {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .p-slogan-adidas {
+    text-align: center;
+    font-size: x-large;
+    width: 100%;
+    margin-top: 40px;
+    color: #000;
+  }
+}
+
 /* NAVEGAÇÃO NUMERO 6 */
 #mySidenav {
   height: 100%; 
@@ -346,21 +371,19 @@ justify-content: center;
 .slideshow-container, .slideshow-container-5, .slideshow-container-4,.slideshow-container-3,.slideshow-container-2, .slideshow-container-1 {
   width: 50%;
   float: left;
+  margin-top: 0%;
 }
 
 /* posição e estilo do botão de fechar */
 .closebtn {
   float: right;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-  margin-top: 2px;
+  font-size: 30px;
   background-color: #5e4949;
   color: #e3d5ba;
-  border: none;
-  font-style: none;
+  padding: 10px;
   text-decoration: none;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 10px 0px 10px 0px;
+  border: solid 4px white;
 }
 
 /*  */
@@ -375,7 +398,6 @@ justify-content: center;
   width: 40%;
   height: 2400px;
   float: right;
-  margin-top: 2px;
   margin-left: 5px;
 }
 @media screen and (max-width: 700px) {
@@ -391,11 +413,13 @@ justify-content: center;
 .p-info-2{
   text-align: center;
   color:  #d8cdbc;
+  font-size: x-large;
 }
 
 .p-info-3{
   text-align: center;
   color:  #5d3830;
+  font-size: x-large;
   margin: 0%;
   background-color: white;
   padding: 1%;
@@ -403,7 +427,7 @@ justify-content: center;
 
 .p-info-4{
   color: #e3d5ba;
-  font-size: small;
+  font-size: large;
   text-align: center;
   margin: 0%;
 }
@@ -420,7 +444,7 @@ justify-content: center;
 /* acordeão */
 details{
   background-color: #eceff1;
-  color: #617e77;
+  color: #5e4949;
   padding: 10px;
   border: solid  #5e4949;
   font-size: 20px;
@@ -485,7 +509,6 @@ details[open] summary::after{
   width: 40%;
   height: 2400px;
   float: right;
-  margin-top: 2px;
   margin-left: 5px;
 }
 @media screen and (max-width: 700px) {
@@ -501,10 +524,12 @@ details[open] summary::after{
 .p-info-2--5{
   text-align: center;
   color:  #d8cdbc;
+  font-size: x-large;
 }
 
 .p-info-3--5{
   text-align: center;
+  font-size: x-large;
   color:  #345f97;
   background-color: white;
   margin: 0%;
@@ -512,9 +537,10 @@ details[open] summary::after{
 
 .p-info-4--5{
   color: #cebea6;
-  font-size: small;
+  font-size: larger;
   text-align: center;
   margin: 0%;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 700px) {
@@ -545,15 +571,12 @@ details[open] summary::after{
 .details-5, .summary-5{
   user-select: none;
   outline: none;
+  font-size: x-large;
 }
 
 .details-5 p{
   color: #8a888b;
 }
-
-/* details[open] p{
-  color: #8a888b;
-} */
 
 .details-5 .summary-5::after{
   content: "+";
@@ -577,16 +600,13 @@ details[open] summary::after{
 
 .closebtn-5{
   float: right;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-  margin-top: 2px;
+  font-size: 30px;
   background-color: #5782ad;
   color: #e3d5ba;
-  border: none;
-  font-style: none;
+  padding: 10px;
   text-decoration: none;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 10px 0px 10px 0px;
+  border: solid 4px white;
 }
 
 
@@ -628,18 +648,21 @@ details[open] summary::after{
 .p-info-2--4{
   text-align: center;
   color:  white;
+  font-size: x-large;
 }
 
 .p-info-3--4{
   text-align: center;
+  font-size: x-large;
   color:  #d3b9e8;
   background-color: white;
   margin: 0%;
+  padding: 1%;
 }
 
 .p-info-4--4{
   color: #eee3f7;
-  font-size: small;
+  font-size: larger;
   text-align: center;
   margin: 0%;
 }
@@ -648,10 +671,6 @@ details[open] summary::after{
   .p-info-4--4 {
     margin-bottom: 10px;
   }
-}
-
-@media screen and (max-width: 700px) {
-  .p-info-5--4 {font-size: 10px;}
 }
 
 .b-4{
@@ -672,6 +691,7 @@ details[open] summary::after{
   .details-4, .summary-4{
   user-select: none;
   outline: none;
+  font-size: x-large;
   }
           
   .details-4 p{
@@ -685,6 +705,7 @@ details[open] summary::after{
   .details-4 .summary-4::after{
   content: "+";
   float: right;
+  font-size: larger;
   transition: transform .7s ease;
   }
   
@@ -704,16 +725,13 @@ details[open] summary::after{
 
 .closebtn-4{
   float: right;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-  margin-top: 2px;
+  font-size: 30px;
   background-color: #d3b9e8;
   color: white;
-  border: none;
-  font-style: none;
+  padding: 10px;
   text-decoration: none;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 10px 0px 10px 0px;
+  border: solid 4px white;
 }
 @media screen and (max-width: 700px) {
   .details-4 {
@@ -757,7 +775,6 @@ details[open] summary::after{
   width: 40%;
   height: 2350px;
   float: right;
-  margin-top: 2px;
   margin-left: 5px;
 }
 @media screen and (max-width: 700px) {
@@ -766,27 +783,30 @@ details[open] summary::after{
 
 .p-info-1--3{
   color: #345f97;
-  font-size: larger;
   text-align: center;
 }
 
 .p-info-2--3{
   text-align: center;
   color:  #345f97;
+  font-size: x-large;
 }
 
 .p-info-3--3{
   text-align: center;
   color:  #5782ad;
   margin: 0%;
+  font-size: x-large;
   background-color: white;
+  padding: 1%;
 }
 
 .p-info-4--3{
   color: #5782ad;
-  font-size: small;
+  font-size: larger;
   text-align: center;
   margin: 0%;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 700px) {
@@ -817,6 +837,7 @@ details[open] summary::after{
   .details-3, .summary-3{
   user-select: none;
   outline: none;
+  font-size: x-large;
   }
           
   .details-3 p{
@@ -848,29 +869,14 @@ details[open] summary::after{
 
 .closebtn-3{
   float: right;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-  margin-top: 2px;
+  font-size: 30px;
   background-color: #a2bbce;
   color: #e3d5ba;
-  border: none;
-  font-style: none;
+  padding: 10px;
   text-decoration: none;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 10px 0px 10px 0px;
+  border: solid 4px white;
 }
-
-#myBtn-3{
-  color: #5d3830;
-  background-color: white;
-  padding: 1%;
-  border: none;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-}
-
-
 
 /* NAVEGAÇÃO NUMERO 2 */
 #mySidenav-2{
@@ -896,7 +902,6 @@ details[open] summary::after{
   width: 40%;
   height: 2350px;
   float: right;
-  margin-top: 2px;
   margin-left: 5px;
 }
 @media screen and (max-width: 700px) {
@@ -905,33 +910,29 @@ details[open] summary::after{
 
 .p-info-1--2{
   color: white;
-  font-size: larger;
   text-align: center;
 }
 
 .p-info-2--2{
   text-align: center;
   color:  white;
+  font-size: x-large;
 }
 
 .p-info-3--2{
   text-align: center;
   color:  black;
+  font-size: x-large;
   background-color: white;
   margin: 0%;
+  padding: 1%;
 }
 
 .p-info-4--2{
-  color: #cebea6;
-  font-size: small;
+  color: white;
+  font-size: larger;
   text-align: center;
   margin: 0%;
-}
-
-@media screen and (max-width: 700px) {
-  .p-info-4--2 {
-    margin-bottom: 10px;
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -956,6 +957,7 @@ details[open] summary::after{
   .details-2, .summary-2{
   user-select: none;
   outline: none;
+  font-size: x-large;
   }
           
   .details-2 p{
@@ -969,6 +971,7 @@ details[open] summary::after{
   .details-2 .summary-2::after{
   content: "+";
   float: right;
+  font-size: larger;
   transition: transform .7s ease;
   }
   
@@ -987,16 +990,13 @@ details[open] summary::after{
 
 .closebtn-2{
   float: right;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-  margin-top: 2px;
+  font-size: 30px;
   background-color: #dd3034;
   color: #e3d5ba;
-  border: none;
-  font-style: none;
+  padding: 10px;
   text-decoration: none;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 10px 0px 10px 0px;
+  border: solid 4px white;
 }
 
 
@@ -1022,17 +1022,14 @@ details[open] summary::after{
   width: 40%;
   height: 2350px;
   float: right;
-  margin-top: 2px;
   margin-left: 5px;
 }
 @media screen and (max-width: 700px) {
   .infos-1 {height: 800px;}
 }
 
-
 .p-info-1--1{
   color: #5d3830;
-  font-size: larger;
   text-align: center;
 }
 
@@ -1052,16 +1049,10 @@ details[open] summary::after{
 
 .p-info-4--1{
   color: #5d3830;
-  font-size: small;
+  font-size: larger;
   text-align: center;
   margin: 0%;
 }
-@media screen and (max-width: 700px) {
-  .p-info-4--1 {
-    margin-bottom: 10px;
-  }
-}
-
 @media screen and (max-width: 700px) {
   .p-info-5--1 {font-size: 10px;}
 }
@@ -1076,7 +1067,6 @@ details[open] summary::after{
   background-color: white;
   color: #5d3830;
   padding: 10px;
-  margin-bottom: 5px;
   border: solid #e7dccb;
   font-size: 20px;
    cursor: pointer;
@@ -1085,19 +1075,17 @@ details[open] summary::after{
   .details-1, .summary-1{
   user-select: none;
   outline: none;
+  font-size: x-large;
   }
           
   .details-1 p{
   color: #5d3830;
   }
           
-  /* details[open] p{
-    color: #8a888b;
-  } */
-          
   .details-1 .summary-1::after{
   content: "+";
   float: right;
+  font-size: larger;
   transition: transform .7s ease;
   }
   
@@ -1108,7 +1096,7 @@ details[open] summary::after{
   
   @media screen and (max-width: 700px) {
     .details-1 {
-      padding: 0%;
+      padding: 5%;
       height: auto;
       font-size: 10px;
     }
@@ -1117,23 +1105,13 @@ details[open] summary::after{
   
 .closebtn-1{
   float: right;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-  margin-top: 2px;
+  font-size: 30px;
   background-color: #e7dccb;
   color: #5d3830;
-  border: none;
-  font-style: none;
+  padding: 10px;
   text-decoration: none;
-  border-radius: 0 10px 10px 0px;
-}
-@media screen and (max-width: 700px) {
-  .details-1 {
-    padding: 5%;
-    height: auto;
-    font-size: 10px;
-  }
+  border-radius: 10px 0px 10px 0px;
+  border: solid 4px white;
 }
 
 .button--1-1{
@@ -1190,21 +1168,12 @@ details[open] summary::after{
   padding: 10px;
 }
 
-#myBtn{
-  color: #5d3830;
-  background-color: white;
-  padding: 1%;
-  border: none;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-}
-
 /* aviso de produto esgotado */
 .esgotado{
   color: black;
   text-align: left;
-  margin-left: 90px;
+  margin-left: 150px;
+  font-size: large;
 }
 
 @media screen and (max-width: 700px) {
@@ -1219,6 +1188,7 @@ details[open] summary::after{
   text-align: center;
   border: solid black 2px;
   padding: 8px;
+  font-size: 20px;
   margin-top: 0%;
 }
 
