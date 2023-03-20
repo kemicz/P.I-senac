@@ -122,10 +122,6 @@ display: none;
         
       }
     
-      #icone{
-        transition: margin-left .5s; /* pra dar aquele efeito de transição */
-      }
-    
       @media only screen and (max-width: 768px) {
         /* For mobile phones: */
         [id*="mySidebar"] {
@@ -139,10 +135,10 @@ display: none;
       display: inline-block;
     }
     
-    /* Dropdown (Oculto por padrão) */
+    /* Dropdown (sem sobrepor os outros links) */
     .dropdown-content {
       display: none;
-      position: absolute;
+      position: relative;
       background-color: #a3a3a3;
       z-index: 1;
       width: 500px;
@@ -161,9 +157,6 @@ display: none;
     
     /* Mostrar o menu suspenso ao passar o mouse */
     .dropdown:hover .dropdown-content {display: block;}
-    
-    /* Altera a cor de fundo do botão suspenso quando o conteúdo suspenso for exibido */
-    .dropdown:hover .dropbtn {background-color: #3e8e41;}
     
     .slogan{
       margin-top: 10px;
