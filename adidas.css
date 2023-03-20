@@ -53,11 +53,6 @@ body{
 display: none;
   }
 }
-
-    .container-desc {
-      text-align: center;
-      justify-content: center;
-    }
     
     .logo{
     width: 150px;
@@ -130,29 +125,24 @@ display: none;
         background-color: #444;
       }
     
-      #icone{
-        transition: margin-left .5s; /* pra dar aquele efeito de transição */
-      }
-    
       .hr-menuvertical{
         margin-top: 3px;
       }
     
-    /* posição do container <div> */
+/* posição do container <div> */
     .dropdown {
       position: relative;
       display: inline-block;
     }
     
-    /* Dropdown (Oculto por padrão) */
+    /* Dropdown (sem sobrepor os outros links) */
     .dropdown-content {
       display: none;
-      position: absolute;
+      position: relative;
       background-color: #a3a3a3;
-      z-index: 1;
       width: 500px;
     }
-    
+     
     /* links ocultos no dropdown */
     .dropdown-content a {
       color: black;
@@ -166,10 +156,6 @@ display: none;
     
     /* Mostrar o menu suspenso ao passar o mouse */
     .dropdown:hover .dropdown-content {display: block;}
-    
-    /* Altera a cor de fundo do botão suspenso quando o conteúdo suspenso for exibido */
-    .dropdown:hover .dropbtn {background-color: #3e8e41;}
-    
     
       .slogan{
         margin-top: 10px;
@@ -208,10 +194,6 @@ display: none;
           margin-top: 1px;
         }
       }
-
-      #corpo{
-        transition: margin-left .5s; /* pra dar aquele efeito de transição */
-      }
     
     /* breadcrumb */
     ul.breadcrumb {
@@ -246,17 +228,6 @@ display: none;
         ;
         text-decoration: underline;
       } */
-
-    .desconto{
-      background-color: white;
-      padding: 10px;
-      text-decoration: none;
-      width: 100%;
-      color: black;
-      list-style: none;
-      font-size: 15px;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
     
     /* começo coleções */
     .column {
@@ -332,7 +303,41 @@ display: none;
     gap: 40px;
     justify-content: center;
     }
-    
+
+/* slogan na vitrine */
+.slogan-adidas{
+  padding: 10px;
+  display: block;
+}
+
+@media screen and (max-width: 490px) {
+  .slogan-adidas {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .img-slogan-adidas {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .p-slogan-adidas {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .p-slogan-adidas {
+    text-align: center;
+    font-size: x-large;
+    width: 100%;
+    margin-top: 40px;
+    color: #000;
+  }
+}
+
     /* NAVEGAÇÃO NUMERO 6 */
     #mySidenav {
       height: 100%; 
@@ -349,26 +354,24 @@ display: none;
     
     .slideshow-container, .slideshow-container-5, .slideshow-container-4,.slideshow-container-3,.slideshow-container-2, .slideshow-container-1 {
       width: 50%;
+      margin-top: 0%;
       float: left;
     }
     
     /* posição e estilo do botão de fechar */
     .closebtn {
       float: right;
-      top: 0;
-      right: 20px;
-      font-size: 36px;
-      margin-top: 2px;
+      font-size: 30px;
       background-color: #617e77;
-      color: #304642;
-      border: none;
-      font-style: none;
+      color: #ffffff;
+      padding: 10px;
       text-decoration: none;
-      border-radius: 0 10px 10px 0px;
+      border-radius: 10px 0px 10px 0px ;
+      border: solid 4px white;
     }
     
     /*  */
-    @media screen and (max-height: 450px) {
+    @media screen and (max-height: 700px) {
       #mySidenav {padding-top: 15px;}
       #mySidenav a {font-size: 18px;}
     }
@@ -379,7 +382,6 @@ display: none;
       width: 40%;
       height: 2800px;
       float: right;
-      margin-top: 2px;
       margin-left: 5px;
     }
 
@@ -396,11 +398,13 @@ display: none;
     .p-info-2{
       text-align: center;
       color:  #d8cdbc;
+      font-size: x-large;
     }
     
     .p-info-3{
       text-align: center;
       color:  #304642;
+      font-size: x-large;
       margin: 0%;
       background-color: #eceff1;
       padding: 1%;
@@ -408,7 +412,7 @@ display: none;
     
     .p-info-4{
       color: #e3d5ba;
-      font-size: small;
+      font-size: larger;
       text-align: center;
       margin: 0%;
       margin-bottom: 50px;
@@ -436,6 +440,7 @@ details{
 details, summary{
   user-select: none;
   outline: none;
+  font-size: x-large;
 }
 
 details p{
@@ -474,7 +479,7 @@ details[open] summary::after{
       z-index: 0; /* para ficar no topo */
       top: 0; /* para ficar no topo */
       right: 0;
-      background-color: #f1efee; 
+      background-color: #eceff1 ; 
       overflow-x: scroll; 
       transition: 0.5s; /* 0.5 de transição para o efeito da abertura da navegação lateral */
       display: block;
@@ -489,7 +494,7 @@ details[open] summary::after{
     .infos-5{
       background-color: #d5dce8;
       width: 40%;
-      height: 2400px;
+      height: 3100px;
       float: right;
       margin-top: 2px;
       margin-left: 5px;
@@ -507,6 +512,7 @@ details[open] summary::after{
     .p-info-2--5{
       text-align: center;
       color:  #8a888b;
+      font-size: x-large;
     }
     
     .p-info-3--5{
@@ -515,11 +521,12 @@ details[open] summary::after{
       background-color: white;
       margin: 0%;
       padding: 1%;
+      font-size: x-large;
     }
     
     .p-info-4--5{
       color: #8a888b;
-      font-size: small;
+      font-size: large;
       text-align: center;
       margin: 0%;
       margin-bottom: 50px;
@@ -584,27 +591,24 @@ details[open] summary::after{
 
     .closebtn-5{
       float: right;
-      top: 0;
-      right: 20px;
-      font-size: 36px;
-      margin-top: 2px;
+      font-size: 30px;
       background-color: #d5dce8;
-      color: #8a888b;
-      border: none;
-      font-style: none;
+      color: black;
+      padding: 10px;
       text-decoration: none;
-      border-radius: 0 10px 10px 0px;
+      border-radius: 10px 0px 10px 0px ;
+      border: solid 4px #8a888b;
     }
     
-    /* NAVEGAÇÃO NUMERO 4 */
-    #mySidenav-4{
+ /* NAVEGAÇÃO NUMERO 4 */
+ #mySidenav-4{
       height: 100%; 
       width: 0; /* 0 width - pode ser mudado no js */
       position: fixed; /* para ficar fixado na página */
       z-index: 0; /* para ficar no topo */
       top: 0; /* para ficar no topo */
       right: 0;
-      background-color:#eceef0; 
+      background-color:#eceff1 ; 
       overflow-x: scroll; 
       transition: 0.5s; /* 0.5 de transição para o efeito da abertura da navegação lateral */
       display: block;
@@ -618,7 +622,6 @@ details[open] summary::after{
       width: 40%;
       height: 2300px;
       float: right;
-      margin-top: 2px;
       margin-left: 5px;
     }
     @media screen and (max-width: 700px) {
@@ -634,6 +637,7 @@ details[open] summary::after{
     .p-info-2--4{
       text-align: center;
       color:  white;
+      font-size: x-large;
     }
     
     .p-info-3--4{
@@ -642,11 +646,12 @@ details[open] summary::after{
       background-color: white;
       margin: 0%;
       padding: 1%;
+      font-size: x-large;
     }
     
     .p-info-4--4{
       color: #eee3f7;
-      font-size: small;
+      font-size: larger;
       text-align: center;
       margin: 0%;
       margin-bottom: 50px;
@@ -711,16 +716,13 @@ transform: rotate(45deg);
       
     .closebtn-4{
       float: right;
-      top: 0;
-      right: 20px;
-      font-size: 36px;
-      margin-top: 2px;
-      background-color: #abb1ca;
-      color: white;
-      border: none;
-      font-style: none;
+      font-size: 30px;
+      background-color:#abb1ca;
+      color: black;
+      padding: 10px;
       text-decoration: none;
-      border-radius: 0px 10px 10px 0px;
+      border-radius: 10px 0px 10px 0px ;
+      border: solid 4px white;
     }
 
     @media screen and (max-width: 700px) {
@@ -731,17 +733,6 @@ transform: rotate(45deg);
       }
     }
     
-    #myBtn-4{
-      color: #5d3830;
-      background-color: white;
-      padding: 1%;
-      border: none;
-      outline: 0;
-      cursor: pointer;
-      width: 100%;
-    }
-    
-    
     /* NAVEGAÇÃO NUMERO 3 */
     #mySidenav-3{
       height: 100%; 
@@ -750,7 +741,7 @@ transform: rotate(45deg);
       z-index: 0; /* para ficar no topo */
       top: 0; /* para ficar no topo */
       right: 0;
-      background-color: #eceff1; 
+      background-color: #eceff1 ; 
       overflow-x: scroll; 
       transition: 0.5s; /* 0.5 de transição para o efeito da abertura da navegação lateral */
       display: block;
@@ -766,7 +757,6 @@ transform: rotate(45deg);
       width: 40%;
       height: 2350px;
       float: right;
-      margin-top: 2px;
       margin-left: 5px;
     }
 
@@ -776,13 +766,13 @@ transform: rotate(45deg);
     
     .p-info-1--3{
       color: #345f97;
-      font-size: larger;
       text-align: center;
     }
     
     .p-info-2--3{
       text-align: center;
       color:  #345f97;
+      font-size: x-large;
     }
     
     .p-info-3--3{
@@ -791,11 +781,12 @@ transform: rotate(45deg);
       margin: 0%;
       background-color: white;
       padding: 1%;
+      font-size: x-large;
     }
     
     .p-info-4--3{
       color: #5782ad;
-      font-size: small;
+      font-size: larger;
       text-align: center;
       margin: 0%;
       margin-bottom: 50px;
@@ -856,29 +847,15 @@ transform: rotate(45deg);
     }
   }
   /* acordeão */
-
     .closebtn-3{
       float: right;
-      top: 0;
-      right: 20px;
-      font-size: 36px;
-      margin-top: 2px;
-      background-color: #a2bbce;
-      color: #e3d5ba;
-      border: none;
-      font-style: none;
+      font-size: 30px;
+      background-color:#a2bbce;
+      color: black;
+      padding: 10px;
       text-decoration: none;
-      border-radius: 0 10px 10px 0px;
-    }
-    
-    #myBtn-3{
-      color: #5d3830;
-      background-color: white;
-      padding: 1%;
-      border: none;
-      outline: 0;
-      cursor: pointer;
-      width: 100%;
+      border-radius: 10px 0px 10px 0px ;
+      border: solid 4px #345f97;
     }
     
     
@@ -890,7 +867,7 @@ transform: rotate(45deg);
       z-index: 0; /* para ficar no topo */
       top: 0; /* para ficar no topo */
       right: 0;
-      background-color: #f1efee; 
+      background-color: #eceff1; 
       overflow-x: scroll; 
       transition: 0.5s; /* 0.5 de transição para o efeito da abertura da navegação lateral */
       display: block;
@@ -906,7 +883,6 @@ transform: rotate(45deg);
       width: 40%;
       height: 2350px;
       float: right;
-      margin-top: 2px;
       margin-left: 5px;
     }
     @media screen and (max-width: 700px) {
@@ -915,18 +891,19 @@ transform: rotate(45deg);
     
     .p-info-1--2{
       color: #b1b2a6;
-      font-size: larger;
       text-align: center;
     }
     
     .p-info-2--2{
       text-align: center;
       color:  #b1b2a6;
+      font-size: x-large;
     }
     
     .p-info-3--2{
       text-align: center;
       color:  #3e5749;
+      font-size: x-large;
       background-color: white;
       margin: 0%;
       padding: 1%;
@@ -934,7 +911,7 @@ transform: rotate(45deg);
     
     .p-info-4--2{
       color: #b1b2a6;
-      font-size: small;
+      font-size: larger;
       text-align: center;
       margin: 0%;
       margin-bottom: 60px;
@@ -997,16 +974,13 @@ transform: rotate(45deg);
     }
     .closebtn-2{
       float: right;
-      top: 0;
-      right: 20px;
-      font-size: 36px;
-      margin-top: 2px;
-      background-color: #3e5749;
-      color: #e3d5ba;
-      border: none;
-      font-style: none;
+      font-size: 30px;
+      background-color:#3e5749;
+      color: white;
+      padding: 10px;
       text-decoration: none;
-      border-radius: 0 10px 10px 0px;
+      border-radius: 10px 0px 10px 0px ;
+      border: solid 4px white;
     }
   
     
@@ -1018,7 +992,7 @@ transform: rotate(45deg);
       z-index: 0; /* para ficar no topo */
       top: 0; /* para ficar no topo */
       right: 0;
-      background-color: #f1efee; 
+      background-color: #eceff1 ; 
       overflow-x: scroll; 
       transition: 0.5s; /* 0.5 de transição para o efeito da abertura da navegação lateral */
       display: block;
@@ -1040,7 +1014,6 @@ transform: rotate(45deg);
 
     .p-info-1--1{
       color: #1f4eb0;
-      font-size: larger;
       text-align: center;
     }
     
@@ -1055,12 +1028,13 @@ transform: rotate(45deg);
       color:  #1f4eb0;
       margin: 0%;
       background-color: white;
+      font-size: x-large;
       padding: 1%;
     }
 
     .p-info-4--1{
       color: #1f4eb0;
-      font-size: small;
+      font-size: larger;
       text-align: center;
       margin: 0%;
       margin-bottom: 50px;
@@ -1126,16 +1100,13 @@ transform: rotate(45deg);
 
     .closebtn-1{
       float: right;
-      top: 0;
-      right: 20px;
-      font-size: 36px;
-      margin-top: 2px;
-      background-color: #e7dccb;
-      color: #5d3830;
-      border: none;
-      font-style: none;
+      font-size: 30px;
+      background-color:#e7dccb;
+      color: black;
+      padding: 10px;
       text-decoration: none;
-      border-radius: 0 10px 10px 0px;
+      border-radius: 10px 0px 10px 0px ;
+      border: solid 4px  white;
     }
     @media screen and (max-width: 700px) {
       .details-1 {
@@ -1155,6 +1126,7 @@ transform: rotate(45deg);
       outline: 0;
       padding: 3%;
       color: white;
+      font-size: large;
       background-color: #000;
       text-align: center;
       cursor: pointer;
@@ -1177,6 +1149,7 @@ transform: rotate(45deg);
       background-color: #ffffff;
       text-align: center;
       cursor: pointer;
+      font-size: large;
       width: 70%;
       border-style: double;
     }
@@ -1214,7 +1187,8 @@ transform: rotate(45deg);
 .esgotado{
   color: black;
   text-align: left;
-  margin-left: 90px;
+  margin-left: 150px;
+  font-size: x-large;
 }
 
 @media screen and (max-width: 700px) {
@@ -1229,5 +1203,6 @@ transform: rotate(45deg);
   text-align: center;
   border: solid black 2px;
   padding: 8px;
+  font-size: 20px;
   margin-top: 0%;
 }
