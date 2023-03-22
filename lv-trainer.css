@@ -15,7 +15,6 @@ max-width: 100%;
   user-select: none;
   cursor: default;
   z-index:999; /* z-index para jogar para frente e sobrepor tudo */
-
  }
  
  .preload::after {
@@ -125,19 +124,6 @@ margin-left: 10px;
 background-color: #444;
 }
     
-#icone{
-transition: margin-left .5s; /* pra dar aquele efeito de transição */
-}
-    
-    
-@media only screen and (max-width: 768px) {
-/* For mobile phones: */
-[id*="mySidebar"] {
-width: 100%;
-}
-}
-    
-    
 .hr-menuvertical{
 margin-top: 3px;
 }
@@ -153,7 +139,6 @@ display: inline-block;
   display: none;
   position: relative;
   background-color: #a3a3a3;
-  z-index: 1;
   width: 500px;
 }
     
@@ -330,6 +315,40 @@ display: flex;
 gap: 40px;
 justify-content: center;
 }
+
+/* slogan na vitrine */
+.slogan-adidas{
+  padding: 10px;
+  display: block;
+}
+
+@media screen and (max-width: 490px) {
+  .slogan-adidas {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .img-slogan-adidas {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .p-slogan-adidas {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .p-slogan-adidas {
+    text-align: center;
+    font-size: x-large;
+    width: 100%;
+    margin-top: 40px;
+    color: #000;
+  }
+}
     
 /* NAVEGAÇÃO NUMERO 6 */
 #mySidenav {
@@ -353,17 +372,14 @@ float: left;
 /* posição e estilo do botão de fechar */
 .closebtn {
 float: right;
-top: 0;
-right: 20px;
-font-size: 36px;
-margin-top: 2px;
+font-size: 30px;
 background-color: #50403f;
-color: #7d5a44;
-border: none;
-font-style: none;
+color: white;
+padding: 10px;
 text-decoration: none;
-border-radius: 0 10px 10px 0px;
-    }
+border-radius: 10px 0px 10px 0px;
+border: solid 4px white;
+}
     
 /*  */
 @media screen and (max-height: 450px) {
@@ -378,7 +394,6 @@ background-color: #50403f;
 width: 40%;
 height: 2000px;
 float: right;
-margin-top: 2px;
 margin-left: 5px;
 }
 @media screen and (max-width: 700px) {
@@ -394,11 +409,13 @@ text-align: center;
 .p-info-2{
 text-align: center;
 color:  #99735b;
+font-size: x-large;
 }
     
 .p-info-3{
 text-align: center;
 color:  #99735b;
+font-size: x-large;
 margin: 0%;
 background-color: white;
 padding: 1%;
@@ -406,9 +423,10 @@ padding: 1%;
     
 .p-info-4{
 color: #99735b;
-font-size: small;
+font-size: larger;
 text-align: center;
 margin: 0%;
+margin-bottom: 50px;
 }
     
 @media screen and (max-width: 700px) {
@@ -423,7 +441,7 @@ border: none;
 /* acordeão */
 details{
 background-color: #eceff1;
-color: #617e77;
+color:  #5e4949;
  padding: 10px;
 border: solid  #5e4949;
 font-size: 20px;
@@ -436,12 +454,8 @@ details, summary{
 }
 
 details p{
-  color: #617e77;
+  color: #5e4949;
 }
-
-/* details[open] p{
-  color: #617e77;
-} */
 
 details summary::after{
 content: "+";
@@ -488,7 +502,6 @@ display: block;
   width: 40%;
   height: 2000px;
   float: right;
-  margin-top: 2px;
   margin-left: 5px;
 }
 @media screen and (max-width: 700px) {
@@ -504,18 +517,20 @@ display: block;
 .p-info-2--5{
   text-align: center;
   color:  white;
+  font-size: x-large;
 }
 
 .p-info-3--5{
   text-align: center;
   color:  #06a768;
+  font-size: x-large;
   background-color: white;
   margin: 0%;
 }
 
 .p-info-4--5{
   color: white;
-  font-size: small;
+  font-size: larger;
   text-align: center;
   margin: 0%;
 }
@@ -523,10 +538,6 @@ display: block;
   .p-info-4--5 {
     margin-bottom: 10px;
   }
-}
-
-@media screen and (max-width: 700px) {
-  .p-info-5--4 {font-size: 10px;}
 }
 
 .b-5{
@@ -579,16 +590,13 @@ display: block;
 
 .closebtn-5{
   float: right;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-  margin-top: 2px;
+  font-size: 30px;
   background-color:  #26743a;
   color: white;
-  border: none;
-  font-style: none;
+  padding: 10px;
   text-decoration: none;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 10px 0px 10px 0px;
+  border: solid 4px white;
 }
 
 
@@ -614,7 +622,6 @@ display: block;
   width: 40%;
   height: 2000px;
   float: right;
-  margin-top: 2px;
   margin-left: 5px;
 }
 @media screen and (max-width: 700px) {
@@ -630,6 +637,7 @@ display: block;
 .p-info-2--4{
   text-align: center;
   color:  white;
+  font-size: x-large;
 }
 
 .p-info-3--4{
@@ -637,13 +645,15 @@ display: block;
   color:  #266f42;
   background-color: white;
   margin: 0%;
+  font-size: x-large;
 }
 
 .p-info-4--4{
   color: #78ac8d;
-  font-size: small;
+  font-size: large;
   text-align: center;
   margin: 0%;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 700px) {
   .p-info-4--4 {
@@ -705,16 +715,13 @@ display: block;
 
 .closebtn-4{
   float: right;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-  margin-top: 2px;
+  font-size: 30px;
   background-color: #266f42;
   color: white;
-  border: none;
-  font-style: none;
+  padding: 10px;
   text-decoration: none;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 10px 0px 10px 0px;
+  border: solid 4px white;
 }
 @media screen and (max-width: 700px) {
   .details-4 {
@@ -723,17 +730,6 @@ display: block;
     font-size: 10px;
   }
 }
-
-#myBtn-4{
-  color: #5d3830;
-  background-color: white;
-  padding: 1%;
-  border: none;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-}
-
 
 /* NAVEGAÇÃO NUMERO 3 */
 #mySidenav-3{
@@ -758,7 +754,6 @@ display: block;
   width: 40%;
   height: 2000px;
   float: right;
-  margin-top: 2px;
   margin-left: 5px;
 }
 @media screen and (max-width: 700px) {
@@ -767,32 +762,29 @@ display: block;
 
 .p-info-1--3{
   color: #96a6a1;
-  font-size: larger;
+  margin-left: 50px;
   text-align: center;
 }
 
 .p-info-2--3{
   text-align: center;
   color:  #96a6a1;
+  font-size: x-large;
 }
 
 .p-info-3--3{
   text-align: center;
   color:  #96a6a1;
+  font-size: x-large;
   margin: 0%;
   background-color: white;
 }
 
 .p-info-4--3{
   color: #96a6a1;
-  font-size: small;
+  font-size: larger;
   text-align: center;
   margin: 0%;
-}
-@media screen and (max-width: 700px) {
-  .p-info-4--3 {
-    margin-bottom: 10px;
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -807,7 +799,7 @@ display: block;
 /* acordeão */
 .details-3{
   background-color: white;
-  color: #82879b;
+  color: #96a6a1;
   padding: 10px;
   border: solid #c1c3c4;
   font-size: 20px;
@@ -820,13 +812,9 @@ display: block;
   }
           
   .details-3 p{
-  color: #82879b;
+  color: #96a6a1;
   }
-          
-  /* details[open] p{
-    color: #8a888b;
-  } */
-          
+
   .details-3 .summary-3::after{
   content: "+";
   float: right;
@@ -848,28 +836,14 @@ display: block;
 
 .closebtn-3{
   float: right;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-  margin-top: 2px;
+  font-size: 30px;
   background-color: #c1c3c4;
   color: #7c8884;
-  border: none;
-  font-style: none;
+  padding: 10px;
   text-decoration: none;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 10px 0px 10px 0px ;
+  border: solid 4px white;
 }
-
-#myBtn-3{
-  color: #5d3830;
-  background-color: white;
-  padding: 1%;
-  border: none;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-}
-
 
 /* NAVEGAÇÃO NUMERO 2 */
 #mySidenav-2{
@@ -895,7 +869,6 @@ display: block;
   width: 40%;
   height: 2000px;
   float: right;
-  margin-top: 2px;
   margin-left: 5px;
 }
 @media screen and (max-width: 700px) {
@@ -904,32 +877,29 @@ display: block;
 
 .p-info-1--2{
   color: white;
-  font-size: larger;
+  margin-left: 50px;
   text-align: center;
 }
 
 .p-info-2--2{
   text-align: center;
   color:  white;
+  font-size: x-large;
 }
 
 .p-info-3--2{
   text-align: center;
   color:  #83bde4;
+  font-size: x-large;
   background-color: white;
   margin: 0%;
 }
 
 .p-info-4--2{
   color: #cebea6;
-  font-size: small;
+  font-size: larger;
   text-align: center;
   margin: 0%;
-}
-@media screen and (max-width: 700px) {
-  .p-info-4--2 {
-    margin-bottom: 10px;
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -985,16 +955,13 @@ display: block;
 
 .closebtn-2{
   float: right;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-  margin-top: 2px;
+  font-size: 30px;
   background-color: #00b1de;
   color: #e3d5ba;
-  border: none;
-  font-style: none;
+  padding: 10px;
   text-decoration: none;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 10px 0px 10px 0px ;
+  border: solid 4px white;
 }
 
 
@@ -1020,7 +987,6 @@ display: block;
   width: 40%;
   height: 2000px;
   float: right;
-  margin-top: 2px;
   margin-left: 5px;
 }
 @media screen and (max-width: 700px) {
@@ -1028,38 +994,31 @@ display: block;
 }
 
 .p-info-1--1{
-  color: #d6d4d7
-  ;
-  font-size: larger;
+  color: #d6d4d7;
+  margin-left: 50px;
   text-align: center;
 }
 
 .p-info-2--1{
   text-align: center;
-  color:  #d6d4d7
-  ;
+  color:  #d6d4d7;
   font-size: x-large;
 }
 
 .p-info-3--1{
   text-align: center;
   color:  #77747b;
+  font-size: x-large;
   margin: 0%;
   background-color: white;
   padding: 1%;
 }
 
 .p-info-4--1{
-  color: #d6d4d7
-  ;
-  font-size: small;
+  color: #d6d4d7;
+  font-size: larger;
   text-align: center;
   margin: 0%;
-}
-@media screen and (max-width: 700px) {
-  .p-info-4--1 {
-    margin-bottom: 10px;
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -1074,7 +1033,7 @@ display: block;
 /* acordeão */
 .details-1{
   background-color: white;
-  color: #5d3830;
+  color: #77747b;
   padding: 10px;
   margin-bottom: 5px;
   border: solid #004655;
@@ -1088,7 +1047,7 @@ display: block;
   }
           
   .details-1 p{
-  color: #5d3830;
+  color:  #77747b;
   }
           
   /* details[open] p{
@@ -1105,7 +1064,6 @@ display: block;
   transform: rotate(45deg);
    }
   
-  
   @media screen and (max-width: 700px) {
     .details-1 {
       padding: 0%;
@@ -1117,16 +1075,13 @@ display: block;
 
 .closebtn-1{
   float: right;
-  top: 0;
-  right: 20px;
-  font-size: 36px;
-  margin-top: 2px;
+  font-size: 30px;
   background-color: #004655;
   color: #d6d4d7;
-  border: none;
-  font-style: none;
+  padding: 10px;
   text-decoration: none;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 10px 0px 10px 0px ;
+  border: solid 4px white;
 }
 @media screen and (max-width: 700px) {
   .details-1 {
@@ -1205,10 +1160,11 @@ display: block;
 .esgotado{
   color: black;
   text-align: left;
-  margin-left: 90px;
+  margin-left: 100px;
+  font-size: x-large;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .esgotado {
     font-size: small;
     margin-left: 0%;
@@ -1220,5 +1176,6 @@ display: block;
   text-align: center;
   border: solid black 2px;
   padding: 8px;
+  font-size: 20px;
   margin-top: 0%;
 }
