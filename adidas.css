@@ -1126,7 +1126,7 @@ transform: rotate(45deg);
       background-color: #555;
     }
     
-    /* botão de comprar agora e aviso de esgotado */
+    /* botão de comprar e aviso de esgotado */
     .button--4-1 {
       border: none;
       outline: 0;
@@ -1164,16 +1164,14 @@ transform: rotate(45deg);
 /* aviso de produto esgotado */
 .esgotado{
   color: black;
-  text-align: left;
-  margin-left: 100px;
+  text-align: center;
   font-size: x-large;
 }
 
 @media screen and (max-width: 700px) {
   .esgotado {
     font-size: small;
-    margin-left: 0%;
-    text-align: center;
+
   }
 }
 
