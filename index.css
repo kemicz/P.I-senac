@@ -129,12 +129,6 @@ margin-top: 10px;
       transition: margin-left .5s; /* pra dar aquele efeito de transição */
     }
   
-    @media only screen and (max-width: 768px) {
-      /* For mobile phones: */
-      [id*="mySidebar"] {
-        width: 100%;
-      }
-    }
   
   /* posição do container <div> */
   .dropdown {
@@ -145,8 +139,9 @@ margin-top: 10px;
   /* Dropdown (Oculto por padrão) */
   .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #a3a3a3;
+    z-index: 1;
     width: 500px;
   }
   
