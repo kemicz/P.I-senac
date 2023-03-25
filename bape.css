@@ -396,7 +396,7 @@ body{
       font-size: larger;
       text-align: center;
       margin: 0%;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
     }
     @media screen and (max-width: 700px) {
       .p-info-4 {margin-bottom: 20px;
@@ -1089,10 +1089,6 @@ details[open] summary::after{
   .details-1 p{
   color: black;
   }
-          
-  /* details[open] p{
-    color: #8a888b;
-  } */
           
   .details-1 .summary-1::after{
   content: "+";
