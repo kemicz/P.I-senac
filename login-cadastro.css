@@ -333,7 +333,6 @@ body{
 @media (max-width:768px){
     .formulario{
         width: 100%;
-        justify-content: space-evenly;
     }
     .form-cadastro{
         position: absolute;
