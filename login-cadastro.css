@@ -520,3 +520,15 @@ a{
         color: inherit;
     }
 }
+
+.botao-voltar{
+  display: none;
+}
+
+@media (max-width:768px) {
+  .botao-voltar{
+    display: inline;
+    float: left;
+    width: 80%;
+  }
+}
