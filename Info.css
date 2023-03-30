@@ -342,12 +342,14 @@ margin-bottom: 10%;
   }
 }
 
+
 /* area de contato e redes sociais */
 
 .listacontatos{
   list-style: none;
   display: inline-flex;
 }
+
 
 /* parte do suporte */
 .hr1{
