@@ -198,6 +198,36 @@ margin-top: 10px;
     }
   }
 
+.carrinho-2{
+  color: white;
+  width: 50%;
+  justify-content: center;
+  border: solid white 2px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .carrinho-2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .sec-bt {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sec-bt {
+    text-align: center;
+    width: auto;
+  }
+}
+
+
+
 /* acordeão */
 .details-1{
   background-color: black;
@@ -421,7 +451,7 @@ margin-top: 10px;
 
     @media screen and (max-width: 490px) {
       .btn {
-        width: auto;
+        width: 100%;
       }
     }
 
@@ -440,10 +470,10 @@ margin-top: 10px;
     display: block;
   }
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (min-width: 500px) {
     /* For mobile phones: */
     [id*="mySidenav-1"] {
-      width: 100%;
+      display: none;
     }
   }
 
@@ -491,6 +521,7 @@ background-color: green;
     width: auto;
   }
 
+
 .div-1{
 width: auto;
 margin: auto;
@@ -500,3 +531,4 @@ justify-content: center;
 .div-2{
   width: auto;
 }
+

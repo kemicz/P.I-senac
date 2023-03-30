@@ -38,7 +38,7 @@ function abrirNav() {
 
 /* navegação lateral para os tênis - 1 */
 function openNav1(){
-  document.getElementById("mySidenav-1").style.width = "20%";
+  document.getElementById("mySidenav-1").style.width = "100%";
 }
 
 function closeNav1() {
