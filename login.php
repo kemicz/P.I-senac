@@ -9,7 +9,7 @@ if(isset($_POST['email']) && isset($_POST['senha'])){
     $user= $query->fetch_assoc();
     
     if(mysqli_num_rows($query) == 0){
-        echo "<b>E-mail e/ou senha incorretos</b>";
+        echo  "<script>alert('Email ou senha incorretos);</script>";
     }else{
         if(!isset($_SESSION)){
             session_start();
