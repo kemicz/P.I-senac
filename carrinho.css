@@ -198,117 +198,305 @@ margin-top: 10px;
     }
   }
 
-/* steps de confirmação  */
+/* acordeão */
+.details-1{
+  background-color: black;
+  margin: auto;
+  width: 50%;
+  color: white;
+  padding: 10px;
+  border: solid white;
+  font-size: 20px;
+   cursor: pointer;
+   border-radius: 10px 10px 10px 10px;
+   border-bottom: none;
+   font-size: x-large;
+   margin-top: 50px;
+  }
+  
+@media screen and (max-width: 700px) {
+  .summary-1 {
+    font-size: larger;
+  }
+}
+          
+  .details-1 p{
+  color: #85a3e6;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .details-1 {
+      padding: 5%;
+      height: auto;
+      font-size: larger;
+    }
+  }
+
+
+/* acordeão 2 */
+.details-2{
+  background-color:black;
+  margin: auto;
+  width: 50%;
+  color: white;
+  padding: 10px;
+  border: solid white;
+  font-size: 20px;
+   cursor: pointer;
+   border-radius: 10px 10px 0px 0px;
+  }
+          
+  .details-2{
+  user-select: none;
+  outline: none;
+
+  }
+  
+@media screen and (max-width: 700px) {
+  .summary-2 {
+    font-size: larger;
+  }
+}
+          
+  .details-2 p{
+  color: #85a3e6;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .details-2 {
+      padding: 5%;
+      height: auto;
+      font-size: larger;
+    }
+  }
+
+
+/* acordeão 3 */
+.details-3{
+  background-color:black;
+  margin: auto;
+  width: 50%;
+  color: white;
+  padding: 10px;
+  border: solid white;
+  font-size: 20px;
+   cursor: pointer;
+   border-radius: 10px 10px 0px 0px;
+  }
+          
+  .details-3{
+  user-select: none;
+  outline: none;
+
+  }
+  
+@media screen and (max-width: 700px) {
+  .summary-3 {
+    font-size: larger;
+  }
+}
+          
+  .details-3 p{
+  color: #85a3e6;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .details-3 {
+      padding: 5%;
+      height: auto;
+      font-size: larger;
+    }
+  }
 
 
 
 /* checkout */
-.infos-checkout{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    width: auto;
+  .a-carrinho{
+    text-decoration: none;
     color: white;
-    margin-top: 30px;
-}
-
-@media screen and (max-width: 700px) {
-  .infos-checkout {
-    display: block;
-    width: auto;
-  }
-}
-
-.row {
-    display: flex;
-    gap: 100px;
-    margin: 0 16px;
-    width: auto;
-    margin-bottom: 30px;
   }
   
-  @media screen and (max-width: 700px) {
-    .row {
-     gap: 10px;
+  .row {
+      gap: 100px;
+      width: auto;
+      margin-bottom: 30px;
     }
-  }
-
-  .col-25 {
-    width: auto;
-    margin: 0 16px;
-    width: auto;
-  }
-  
-  .col-75 {
-    width: auto;
-  }
-  
-  .col-25,
-  .col-50,
-  .col-75 {
-    padding: 0 16px;
-  }
-  
-  .container {
-    background-color: grey;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-  }
-  
-
-  input[type=text] {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    background-color: black;
-    color: white;
-    border-radius: 3px;
-  }
-  
-  label {
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  .icon-container {
-    margin-bottom: 20px;
-    padding: 7px 0;
-    font-size: 24px;
-  }
-  
-  .btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 17px;
-  }
-  
-  .btn:hover {
-    background-color: #45a049;
-  }
-  
-  span.price {
-    float: right;
-    color: grey;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-  @media (max-width: 800px) {
-    .row {
-      flex-direction: column-reverse;
+    
+    @media screen and (max-width: 700px) {
+      .row {
+       gap: 10px;
+      }
     }
+  
+    .h3-check{
+      margin-bottom: 40px;
+  }
+  
     .col-25 {
+      width: auto;
+    }
+    
+    .col-75 {
+      width: auto;
+    }
+    
+    .col-25,
+    .col-50,
+    .col-75 {
+   padding: 10px;
+    }
+    
+    .container {
+      padding: 5px 20px 15px 20px;
+      border-radius: 3px;
+    }
+
+    @media screen and (max-width: 700px) {
+      .container {
+       width: auto;
+       padding: 10px;
+      }
+    }
+  
+    .container-2 {
+      color: black;
+    }
+
+    input[type=text] {
+      width: 80%;
       margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      background-color: black;
+      color: white;
+      border-radius: 3px;
+    }
+    
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+    .btn:hover {
+      background-color: #45a049;
+    }
+    
+    span.price {
+      float: right;
+      color: grey;
+    }
+    
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column-reverse;
+      }
+      .col-25 {
+        margin-bottom: 20px;
+      }
+    }
+
+    .carrinho-vazio{
+      margin: auto;
+      margin-top: 17px;
+    }
+
+    .p-vazio{
+      margin-top: 100px;
+      margin-bottom: 100px;
+      text-align: center;
+    }
+
+    .btn {
+      background-color: rgba(103,0,145,255);
+      color: white;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      width: 100%;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 17px;  
+    }
+
+    @media screen and (max-width: 490px) {
+      .btn {
+        width: auto;
+      }
+    }
+
+
+   /* NAVEGAÇÃO NUMERO 1 */
+   #mySidenav-1{
+    height: 100%; 
+    width: 0; /* 0 width - pode ser mudado no js */
+    position: fixed; /* para ficar fixado na página */
+    z-index: 0; /* para ficar no topo */
+    top: 0; /* para ficar no topo */
+    right: 0;
+    background-color: white ; 
+    overflow-x: scroll; 
+    transition: 0.5s; /* 0.5 de transição para o efeito da abertura da navegação lateral */
+    display: block;
+  }
+
+  @media only screen and (max-width: 700px) {
+    /* For mobile phones: */
+    [id*="mySidenav-1"] {
+      width: 100%;
     }
   }
 
-  .carrinho-vazio{
-    margin: 30px;
+  @media screen and (max-height: 800px) {
+    #mySidenav-1 {height: auto;}
   }
+
+  .b-1{
+    width: auto;
+    background-color: rgba(103,0,145,255);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size:larger;  
+  }
+
+  .b-1:hover{
+background-color: green;  
+  }
+
+
+.p-bt{
+  color: white;
+}
+
+  .closebtn-1{
+    width: auto;
+    font-size: 30px;
+    background-color:black;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px 0px 10px 10px ;
+    border: solid 4px  white;
+  }
+  @media screen and (max-width: 700px) {
+    .closebtn-1 {font-size: small;}
+  }
+
+  .sec-bt{
+    text-align: center;
+    margin-top: 30px;
+    width: auto;
+  }
+
+.div-1{
+width: auto;
+margin: auto;
+justify-content: center;
+}
+
+.div-2{
+  width: auto;
+}

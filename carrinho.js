@@ -36,4 +36,12 @@ function abrirNav() {
     document.getElementById("corpo").style.marginLeft = "0";
   }
 
-/* steps de confirmação */
+/* navegação lateral para os tênis - 1 */
+function openNav1(){
+  document.getElementById("mySidenav-1").style.width = "20%";
+}
+
+function closeNav1() {
+  document.getElementById("mySidenav-1").style.width = "0";
+  document.getElementById("main-1").style.marginLeft= "20%";
+}

@@ -154,9 +154,7 @@ body{
       
       #corpo{
         transition: margin-left .5s; /* pra dar aquele efeito de transição */
-    
       }
-    
     
     /* breadcrumb */
     ul.breadcrumb {

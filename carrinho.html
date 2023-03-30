@@ -58,94 +58,150 @@
       </section>
       <hr class="hr-slogan">
 
-<!-- step bar -->
-
-
 <!-- checkout -->
-<ul class="infos-checkout">
-    <li class="li-ckechout">
-    <div class="row">
-        <div class="col-75">
-          <div class="container">
-      
-              <div class="row">
-                <div class="col-50">
-                  <h3>Endereço</h3>
-                  <label for="name"><i class="fa fa-user"></i> Nome Completo</label>
-                  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                  <input type="text" id="email" name="email" placeholder="john@example.com">
-                  <label for="adr"><i class="fa fa-address-card-o"></i> Endereço</label>
-                  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                  <label for="city"><i class="fa fa-institution"></i> Cidade</label>
-                  <input type="text" id="city" name="city" placeholder="New York">
-      
-                  <div class="row">
-                    <div class="col-50">
-                      <label for="state">Estado</label>
-                      <input type="text" id="state" name="state" placeholder="NY">
-                    </div>
-                    <div class="col-50">
-                      <label for="zip">Zip</label>
-                      <input type="text" id="zip" name="zip" placeholder="10001">
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="col-50">
-                  <h3>Pagamento</h3>
-                  <label for="fname">Cartões aceitos</label>
-                  <div class="icon-container">
-                    <i class="fa fa-cc-visa" style="color:navy;"></i>
-                    <i class="fa fa-cc-amex" style="color:blue;"></i>
-                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                    <i class="fa fa-cc-discover" style="color:orange;"></i>
-                  </div>
 
-                  <label for="cname">Nome</label>
-                  <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                  <label for="ccnum">Número do cartão</label>
-                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                  <label for="expmonth">Expira</label>
-                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
-      
-                  <div class="row">
-                    <div class="col-50">
-                      <label for="cvv">CVV</label>
-                      <input type="text" id="cvv" name="cvv" placeholder="352">
-                    </div>
-                  </div>
-                </div>
-      
-              </div>
+<!-- usando a imagem para abrir a navegação - 1 -->
 
-              <label>
-                <input type="checkbox" checked="checked" name="sameadr"> Manter o meu endereço salvo
-              </label>
-
-              <button class="btn">Continue to checkout</button>
-
-          </div>
-        </div>
+<!-- acordeão de checkout -->
+<div class="div-1">
+<section class="sec-bt">
+      <span onclick="openNav1()" >
+          <button class="b-1">
+            <img src="carrinho-ft/1055098_cart_basket_shopping_icon.png" alt="" width="50px">
+          </button>
+          <p class="p-bt">Ver Carrinho</p>
+      </span>
+</section>
 </div>
-</li>
 
-<li class="li-ckechout">
-        <div class="col-25">
-          <div class="container">
-            <h4>Carrinho
-              <span class="price" style="color:black">
-                <i class="fa fa-shopping-cart"></i>
-                <b>0</b>
-              </span>
-            </h4>
-            <p class="carrinho-vazio">Seu carrinho está vazio no momento :(  <span class="price"></span></p>
-            <hr>
-            <p>Total <span class="price" style="color:black"><b>R$00,00</b></span></p>
+<div class="div-2">
+<details class="details-1">
+<summary class="summary-1">Formas de Pagamentos</summary>
+      
+  <div class="col-50">
+    <div class="icon-container">
+    <i class="fa fa-cc-visa" > 
+    <img src="carrinho-ft/1156750_finance_mastercard_payment_icon.png" alt="" width="50px"> 
+    </i>
+    <i class="fa fa-cc-amex" >
+    <img src="carrinho-ft/1933702_charge_credit card_debit_payment_visa_icon.png" alt="" width="50px">
+    </i>
+     <i class="fa fa-cc-mastercard" >
+    <img src="carrinho-ft/206675_paypal_method_payment_icon.png" alt="" width="50px">
+    </i>
+    <i class="fa fa-cc-mastercard" >
+    <img src="carrinho-ft/8666421_pix_icon.png" alt="" width="50px">
+    </i>
+  </div>
+
+</details>
+
+<details class="details-2">
+  <summary class="summary-2">Endereço</summary>
+  <div class="row">
+          <div class="col-75">
+            <div class="container">
+        
+                <div class="row">
+                  <div class="col-50">
+                    <label for="name"><i class="fa fa-user"></i> Nome Completo</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Mariazinha">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="john@example.com">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Endereço</label>
+                    <input type="text" id="adr" name="address" placeholder="Largo da Ordem, 123">
+                    <label for="city"><i class="fa fa-institution"></i> Cidade</label>
+                    <input type="text" id="city" name="city" placeholder="Curitiba">
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">Estado</label>
+                        <input type="text" id="state" name="state" placeholder="PR">
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Cep</label>
+                        <input type="text" id="zip" name="zip" placeholder="10001">
+                      </div>
+                    </div>
+                  </div>
+  
+                <label>
+                  <input type="checkbox" checked="checked" name="sameadr"> Manter o meu endereço salvo
+                </label>
+  
+            </div>
           </div>
-        </div>
-</li>
-</ul>
+  </div>
+</details>
+
+<details class="details-3">
+    <summary class="summary-3">Pagamento</summary>
+      <div class="col-75">
+        <div class="container">
+    
+         <div class="col-50">
+      <i class="fa fa-cc-visa" > 
+        <img src="carrinho fotos/1156750_finance_mastercard_payment_icon.png" alt="" width="50px"> 
+      </i>
+      <i class="fa fa-cc-amex" >
+        <img src="carrinho fotos/1933702_charge_credit card_debit_payment_visa_icon.png" alt="" width="50px">
+      </i>
+      <i class="fa fa-cc-mastercard" >
+        <img src="carrinho fotos/206675_paypal_method_payment_icon.png" alt="" width="50px">
+      </i>
+          </div>
+
+    <label for="cname">Nome</label>
+    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+    <label for="ccnum">Número do cartão</label>
+    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+    <label for="expmonth">Expira</label>
+    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+    <div class="row">
+      <div class="col-50">
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="352">
+      </div>
+    </div>
+
+    <button class="btn">Finalizar compra</button>
+
+  </div>
+</div>
+</details>
+</div>
+
+
+<!-- conteúdo que vai ter na navegação - 1 -->
+<div id="mySidenav-1" >
+
+  <section class="infos-1">
+  <a href="javascript:void(0)" class="closebtn-1" onclick="closeNav1()">&times;</a>
+  
+  <div class="col-25">
+    <div class="container-2">
+  
+      <h4 class="carrinho-vazio">Carrinho
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+          <b>0</b>
+        </span>
+      </h4>
+  
+      <hr>
+  
+      <p class="p-vazio">Coe parça, teu carrinho tá vazio :(  <span class="price"></span></p>
+  
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>R$00,00</b></span></p>
+      <button class="btn"> <a href="index.html" class="a-carrinho">Continuar Comprando</a> </button>
+  
+    </div>
+  </div>
+  </div>
+
+</section>
 
 <script src="carrinho.js"></script>
 
